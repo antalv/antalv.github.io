@@ -12,43 +12,49 @@
 body
  
     header
-       .container
-            .row
-                .header__box
-                    .header__box_logo
-                        a(href="/")
-                            img(src="img/logo.png", alt="логотип")
-                    .header__box_tel
-                        img(src="tel.svg", alt="телефон")
-                        a(href="tel:88007076519") 8 (800) 707-65-19
-                    .heeder__box_adress
-                        p Санкт-Петербург
-                        p Лиговский пр., 57, м. "Пл. Восстания"
-                .header__menu
+        .header__top
+            .container
+                .row
+                    .header__box
+                        .header__box_logo
+                            a(href="/")
+                                img(src="img/logo.png", alt="логотип")
+                        .header__box_tel
+                            img(src="img/tel.svg", alt="телефон")
+                            a(href="tel:88007076519") 8 (800) 707-65-19
+                        .heeder__box_adress
+                            p Санкт-Петербург
+                            p Лиговский пр., 57, м. "Пл. Восстания"
+                            p 
+                                span Бесплатная доставка по России
+        .header__menu
+            .container
+                .row
                     ul
                         li 
-                            a Главная
+                            a(href="#") Главная
                         li
-                            a О нас
+                            a(href="#") О нас
                         li
-                            a Блог
+                            a(href="#") Блог
                         li
-                            a Контакты
+                            a(href="#") Контакты
     section.main
         .sell__banner
             .container
                 .row
-                    .sell__banner_img
-                        img(src="tech.png", alt="техника")
-                    .sell__banner_content
-                        h1 Продай ноутбук
-                        p за 10 минут
-                        ul
-                            li Деньги за 10 минут
-                            li Выплата на 40% выше
-                            li Перенос данных бесплатно
-                            li Честные и понятные условия
-                        button.sell Продать
+                    .sell__banner_box
+                        .sell__banner_img
+                            img(src="/img/tech.png", alt="техника")
+                        .sell__banner_content
+                            h1 Продай ноутбук
+                            p за 10 минут
+                            ul
+                                li Деньги за 10 минут
+                                li Выплата на 40% выше
+                                li Перенос данных бесплатно
+                                li Честные и понятные условия
+                            button.sell Продать
         .seo__text1
             .container  
                 .row
