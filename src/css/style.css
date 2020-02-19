@@ -1,0 +1,17 @@
+h1 {
+  color: red;
+}
+
+h2 {
+  color: blue;
+}
+
+h2 {
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+h3 {
+  color: green;
+}
