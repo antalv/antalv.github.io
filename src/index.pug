@@ -7,6 +7,8 @@
     <title>Главная</title>
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/slick-theme.css">
 </head>
 
 body
@@ -133,17 +135,17 @@ body
                     form
                         .col-xs-12.col-md-4
                             span
-                                input.name(type="text")
+                                input.name(type="text", placeholder="Имя")
                         .col-xs-12.col-md-4
                             span
-                                input.tel(type="text")
+                                input.tel(type="text", placeholder="Номер телефона")
                         .col-xs-12.col-md-4
                             span
-                                input.mail(type="text")
+                                input.mail(type="text", placeholder="E-mail")
                         .form1__bottom
                             .col-xs-12.col-md-8
                                 span
-                                    textarea.message(name="message", cols="30", rows="10")
+                                    textarea.message(name="message", cols="30", rows="10", placeholder="Сообщение")
                             .col-xs-12.col-md-4
                                 span
                                     input.form__button(type="submit", value="Быстрая оценка")
@@ -158,7 +160,7 @@ body
                 .row
                     h2 Отзывы
                     .reviews__block
-                        .rewiews__item  
+                        .reviews__item  
                             .reviews__item_name Иван Иванов
                             .reviews__item_stars
                                 .reviews__item_stars_item
@@ -168,7 +170,7 @@ body
                                 .reviews__item_stars_item
                             .reviews__item_text Менеджеры отработали очень хорошо.Нужен был маленький ноутбук для учебы.Предложили несколько вариантов.Сразу показали недостатки на всех ноутах ,от пятен на экране до батареи.Есть небольшая гарантия, в течении недели можно вернуть обратно. Есть один минус. Не дозвониться по указанному телефону на сайте. В принципе. Ехали наугад. Да и уже дома обнаружили ,что нам отдали только половину зарядки. Нет сетевого кабеля.Скорее это недоразумение.Но дозвониться опять не смогли. Магазин рекомендую.
                         
-                        .rewiews__item  
+                        .reviews__item  
                             .reviews__item_name Иван Иванов
                             .reviews__item_stars
                                 .reviews__item_stars_item
@@ -177,26 +179,7 @@ body
                                 .reviews__item_stars_item
                                 .reviews__item_stars_item
                             .reviews__item_text Менеджеры отработали очень хорошо.Нужен был маленький ноутбук для учебы.Предложили несколько вариантов.Сразу показали недостатки на всех ноутах ,от пятен на экране до батареи.Есть небольшая гарантия, в течении недели можно вернуть обратно. Есть один минус. Не дозвониться по указанному телефону на сайте. В принципе. Ехали наугад. Да и уже дома обнаружили ,что нам отдали только половину зарядки. Нет сетевого кабеля.Скорее это недоразумение.Но дозвониться опять не смогли. Магазин рекомендую.
-                        .rewiews__item  
-                            .reviews__item_name Иван Иванов
-                            .reviews__item_stars
-                                .reviews__item_stars_item
-                                .reviews__item_stars_item
-                                .reviews__item_stars_item
-                                .reviews__item_stars_item
-                                .reviews__item_stars_item
-                            .reviews__item_text Менеджеры отработали очень хорошо.Нужен был маленький ноутбук для учебы.Предложили несколько вариантов.Сразу показали недостатки на всех ноутах ,от пятен на экране до батареи.Есть небольшая гарантия, в течении недели можно вернуть обратно. Есть один минус. Не дозвониться по указанному телефону на сайте. В принципе. Ехали наугад. Да и уже дома обнаружили ,что нам отдали только половину зарядки. Нет сетевого кабеля.Скорее это недоразумение.Но дозвониться опять не смогли. Магазин рекомендую.
-                        
-                        .rewiews__item  
-                            .reviews__item_name Иван Иванов
-                            .reviews__item_stars
-                                .reviews__item_stars_item
-                                .reviews__item_stars_item
-                                .reviews__item_stars_item
-                                .reviews__item_stars_item
-                                .reviews__item_stars_item
-                            .reviews__item_text Менеджеры отработали очень хорошо.Нужен был маленький ноутбук для учебы.Предложили несколько вариантов.Сразу показали недостатки на всех ноутах ,от пятен на экране до батареи.Есть небольшая гарантия, в течении недели можно вернуть обратно. Есть один минус. Не дозвониться по указанному телефону на сайте. В принципе. Ехали наугад. Да и уже дома обнаружили ,что нам отдали только половину зарядки. Нет сетевого кабеля.Скорее это недоразумение.Но дозвониться опять не смогли. Магазин рекомендую.
-                    .rewiews__item  
+                        .reviews__item  
                             .reviews__item_name Иван Иванов
                             .reviews__item_stars
                                 .reviews__item_stars_item
@@ -206,22 +189,41 @@ body
                                 .reviews__item_stars_item
                             .reviews__item_text Менеджеры отработали очень хорошо.Нужен был маленький ноутбук для учебы.Предложили несколько вариантов.Сразу показали недостатки на всех ноутах ,от пятен на экране до батареи.Есть небольшая гарантия, в течении недели можно вернуть обратно. Есть один минус. Не дозвониться по указанному телефону на сайте. В принципе. Ехали наугад. Да и уже дома обнаружили ,что нам отдали только половину зарядки. Нет сетевого кабеля.Скорее это недоразумение.Но дозвониться опять не смогли. Магазин рекомендую.
                         
-                    .rewiews__item  
-                        .reviews__item_name Иван Иванов
-                        .reviews__item_stars
-                            .reviews__item_stars_item
-                            .reviews__item_stars_item
-                            .reviews__item_stars_item
-                            .reviews__item_stars_item
-                            .reviews__item_stars_item
-                        .reviews__item_text Менеджеры отработали очень хорошо.Нужен был маленький ноутбук для учебы.Предложили несколько вариантов.Сразу показали недостатки на всех ноутах ,от пятен на экране до батареи.Есть небольшая гарантия, в течении недели можно вернуть обратно. Есть один минус. Не дозвониться по указанному телефону на сайте. В принципе. Ехали наугад. Да и уже дома обнаружили ,что нам отдали только половину зарядки. Нет сетевого кабеля.Скорее это недоразумение.Но дозвониться опять не смогли. Магазин рекомендую.
+                        .reviews__item  
+                            .reviews__item_name Иван Иванов
+                            .reviews__item_stars
+                                .reviews__item_stars_item
+                                .reviews__item_stars_item
+                                .reviews__item_stars_item
+                                .reviews__item_stars_item
+                                .reviews__item_stars_item
+                            .reviews__item_text Менеджеры отработали очень хорошо.Нужен был маленький ноутбук для учебы.Предложили несколько вариантов.Сразу показали недостатки на всех ноутах ,от пятен на экране до батареи.Есть небольшая гарантия, в течении недели можно вернуть обратно. Есть один минус. Не дозвониться по указанному телефону на сайте. В принципе. Ехали наугад. Да и уже дома обнаружили ,что нам отдали только половину зарядки. Нет сетевого кабеля.Скорее это недоразумение.Но дозвониться опять не смогли. Магазин рекомендую.
+                        .reviews__item  
+                                .reviews__item_name Иван Иванов
+                                .reviews__item_stars
+                                    .reviews__item_stars_item
+                                    .reviews__item_stars_item
+                                    .reviews__item_stars_item
+                                    .reviews__item_stars_item
+                                    .reviews__item_stars_item
+                                .reviews__item_text Менеджеры отработали очень хорошо.Нужен был маленький ноутбук для учебы.Предложили несколько вариантов.Сразу показали недостатки на всех ноутах ,от пятен на экране до батареи.Есть небольшая гарантия, в течении недели можно вернуть обратно. Есть один минус. Не дозвониться по указанному телефону на сайте. В принципе. Ехали наугад. Да и уже дома обнаружили ,что нам отдали только половину зарядки. Нет сетевого кабеля.Скорее это недоразумение.Но дозвониться опять не смогли. Магазин рекомендую.
+                            
+                        .reviews__item  
+                            .reviews__item_name Иван Иванов
+                            .reviews__item_stars
+                                .reviews__item_stars_item
+                                .reviews__item_stars_item
+                                .reviews__item_stars_item
+                                .reviews__item_stars_item
+                                .reviews__item_stars_item
+                            .reviews__item_text Менеджеры отработали очень хорошо.Нужен был маленький ноутбук для учебы.Предложили несколько вариантов.Сразу показали недостатки на всех ноутах ,от пятен на экране до батареи.Есть небольшая гарантия, в течении недели можно вернуть обратно. Есть один минус. Не дозвониться по указанному телефону на сайте. В принципе. Ехали наугад. Да и уже дома обнаружили ,что нам отдали только половину зарядки. Нет сетевого кабеля.Скорее это недоразумение.Но дозвониться опять не смогли. Магазин рекомендую.
     footer
         .footer__top
             .container  
                 .row
-                    .footer__logo
-                        img(src="logo.png", alt="логотип")
-                    .footer__menu1
+                    .col-xs-12.col.md-3.footer__logo
+                        img(src="img/logo.png", alt="логотип")
+                    .col-xs-12.col.md-3.footer__menu1
                         ul
                             li
                                 a Продать ноутбук
@@ -237,7 +239,7 @@ body
                                 a Продать ноутбук
                             li
                                 a Продать ноутбук
-                    .footer__menu2
+                    .col-xs-12.col.md-3.footer__menu2
                         ul
                             li
                                 a Блог
@@ -245,7 +247,7 @@ body
                                 a О нас
                             li
                                 a Контакты
-                    .footer__info
+                    .col-xs-12.col-md-3.footer__info
                         .footer__info_tel
                             a(href="tel:88127010653") 8 (812) 701-06-53
                         .footer__info_adress 
@@ -264,7 +266,10 @@ body
             
                 
     // ------------------- scripts -----------------------
+    script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js")
     script(src="js/bootstrap.js")
+    script(src="js/slick.js")
     script(src="js/scripts.js")
+    
 
 </html>

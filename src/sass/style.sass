@@ -11,6 +11,7 @@ $red: #bc303e
     font-size: 18px
     transition: 0.4s
     border: none
+    padding: 0
 
 
 @import url('https://fonts.googleapis.com/css?family=Exo+2:300,400,600,700&display=swap&subset=cyrillic');
@@ -21,7 +22,7 @@ body
     padding: 0
     color: #222
     line-height: 1.2
-button, a, input
+button, a, input, textarea
     outline: none !important
 p 
     padding: 0
@@ -35,10 +36,12 @@ img
     max-width: 100%
 h2 
     text-align: center
-    padding-bottom: 25px
+    padding-bottom: 30px
+    margin: 0
+    width: 100%
 header
     padding-top: 15px
-    padding-bottom: 30px
+    padding-bottom: 43px
 .header__box
     width: 100%
     display: flex
@@ -64,7 +67,7 @@ header
             a 
                 font-weight: 600
                 font-size: 18px
-                padding: 20px 25px
+                padding: 27px 25px
                 float: left
                 color: #000
             a:hover 
@@ -73,14 +76,14 @@ header
                 color: #fff
 .sell__banner
     background: #f5f5f5
-    margin-bottom: 30px
     .sell__banner_box
     float: left
     width: 100%
-    padding: 30px
+    padding: 35px
 .sell__banner_img
     float: left
     width: 60%
+    padding: 0 35px
 .sell__banner_content
     float: left
     width: 40%
@@ -96,6 +99,7 @@ header
             font-size: 18px
     button.sell 
         @include button
+        max-width: 260px
         &:hover
             box-shadow: 0 4px 0 0 #861c27, 0 7px 7px 0 rgba(0, 0, 0, 0.35) !important
             transition: 0.4s
@@ -104,18 +108,23 @@ header
             position: relative
             top: 2px
             height: 57px
-.seo__text1
+.seo__text1, .seo__text2
     text-align: left
     text-indent: 15px
-    padding-bottom: 30px
+    padding-bottom: 50px
+    display: block
+    float: left
+    width: 100%
+    padding-top: 50px
     p 
         padding-bottom: 10px
 .products .row
     flex-direction: column
-    h2 
+
 
 .products__block
     position: relative
+    padding-bottom: 25px
     >div
         float: left
     .products__item
@@ -124,40 +133,52 @@ header
         text-align: center
         padding: 15px
         margin-bottom: 25px
+        border-radius: 5px
         &_img
             padding-bottom: 20px
         .products__sell
             border: 2px solid $red
-            padding: 5px 20px
+            padding: 9px 20px
             color: #222
+            font-weight: 600
             background: none
+            transition: 0.3s
             &:hover
                 background: $red
                 color: #fff
+                transition: 0.3s
 .form1
     background: #000
+    padding: 0 0 45px 0
     .row
         flex-direction: column
     h2 
         color: #fff
         font-weight: 600
-        padding-top: 25px
+        padding-top: 45px
+        margin: 0
+        padding-bottom: 25px
     form 
         >div
             position: relative
             float: left
         span
-            margin: 10px 25px
+            margin: 20px 0px
             float: left
             width: 100%
             input, textarea
                 width: 100%
                 display: block
-                padding: 10px 10px
+                padding: 20px 10px
                 border-radius: 5px
-                border:none
+                border: 1px solid #f9f9f9
+                background: none
+                box-shadow: none
+                padding-left: 45px
+                color: #fff
             textarea
                 height: 125px
+                padding-left: 15px
         .form1__bottom
                 width: 100%
                 display: flex
@@ -167,9 +188,113 @@ header
         width: 100%
         float: left
         max-width: 100%
+    input.name 
+        background: url(../img/user.svg) no-repeat 12px center 
+        background-size: 20px
+    input.mail 
+        background: url(../img/mail.svg) no-repeat 12px center 
+        background-size: 20px 
+    input.tel 
+        background: url(../img/tel_form.svg) no-repeat 12px center 
+        background-size: 20px 
+.seo__text2
+    padding: 50px 0
+.reviews, .reviews__block
+    float: left
+    width: 100%
+.reviews__item
+    border: 1px solid #d9d9d9
+    padding: 30px 50px
+    line-height: 1.5
+    font-size: 17px
+    width: calc(100% - 20px) !important
+    border-radius: 5px
+    margin-left: 10px
+.reviews__item:nth-child(odd)
+    margin-right:  10px
+.reviews__item_name
+    font-size: 20px
+    font-weight: 600
+.reviews__item_stars
+    float: left
+    width: 100%
+    margin: 2px 0 25px
+    &_item
+        background: url(../img/star.svg) no-repeat
+        width: 15px
+        height: 15px
+        float: left
+        margin-right: 5px
+.reviews
+    padding-bottom: 50px
+    .slick-prev, .slick-next
+        background: url(../img/arrow.svg) no-repeat center center !important
+        position: absolute
+        top: calc(100% + 45px)
+        border: 1px solid $red
+        height: 50px
+        width: 50px
+        background-size: 50% !important
+        left: calc(50% + 9px)
+    .slick-arrow:hover
+            box-shadow: 0px 0px 10px -3px inset $red
+            background: url(../img/arrow.svg) no-repeat center center !important
+            position: absolute
+            top: calc(100% + 45px)
+            border: 1px solid $red
+            height: 50px
+            width: 50px
+            background-size: 50% !important
+            left: calc(50% + 9px)
+    .slick-prev, .slick-prev:hover
+        transform: rotate(180deg)
+        top: calc(100% + 20px)
+        left: calc(50% - 60px)
+    .slick-prev:before, .slick-next:before
+        display: none
+footer 
+    background:  #f5f5f5
+    float: left
+    width: 100%
+    margin-top: 50px
+    padding: 50px 0 0 0
+    .footer__top
+        padding-bottom: 30px
+    .footer__menu1, .footer__menu2
+        ul 
+            li
+                padding-bottom: 15px 
+                a
+                    text-aling: left
+                    font-weight: 600
+                    font-size: 17px 
+    .footer__info
+        float: right
+        text-align: right
+        &_tel
+            padding-bottom: 10px
+            a 
+                color: #000000
+                font-weight: 600
+                font-size: 22px
+                padding-bottom: 15px
+        &_adress
+            p 
+                padding-bottom: 5px
+        &_mail
+            padding-top: 5px
+            a 
+                color: $red
+                font-weight: 600
+                font-size: 17px
+    .footer__bottom
+        border-top: 1px solid #c4c4c4
+        padding: 25px 0
+        .row
+            display: flex
+            justify-content: space-between
 
-    
-            
+        
 
 
 

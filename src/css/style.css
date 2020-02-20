@@ -7,7 +7,7 @@ body {
   line-height: 1.2;
 }
 
-button, a, input {
+button, a, input, textarea {
   outline: none !important;
 }
 
@@ -31,12 +31,14 @@ img {
 
 h2 {
   text-align: center;
-  padding-bottom: 25px;
+  padding-bottom: 30px;
+  margin: 0;
+  width: 100%;
 }
 
 header {
   padding-top: 15px;
-  padding-bottom: 30px;
+  padding-bottom: 43px;
 }
 
 .header__box {
@@ -86,7 +88,7 @@ header {
 .header__menu ul li a {
   font-weight: 600;
   font-size: 18px;
-  padding: 20px 25px;
+  padding: 27px 25px;
   float: left;
   color: #000;
 }
@@ -99,15 +101,15 @@ header {
 
 .sell__banner {
   background: #f5f5f5;
-  margin-bottom: 30px;
   float: left;
   width: 100%;
-  padding: 30px;
+  padding: 35px;
 }
 
 .sell__banner_img {
   float: left;
   width: 60%;
+  padding: 0 35px;
 }
 
 .sell__banner_content {
@@ -146,6 +148,8 @@ header {
   -webkit-transition: 0.4s;
   transition: 0.4s;
   border: none;
+  padding: 0;
+  max-width: 260px;
 }
 
 .sell__banner_content button.sell:hover {
@@ -163,13 +167,17 @@ header {
   height: 57px;
 }
 
-.seo__text1 {
+.seo__text1, .seo__text2 {
   text-align: left;
   text-indent: 15px;
-  padding-bottom: 30px;
+  padding-bottom: 50px;
+  display: block;
+  float: left;
+  width: 100%;
+  padding-top: 50px;
 }
 
-.seo__text1 p {
+.seo__text1 p, .seo__text2 p {
   padding-bottom: 10px;
 }
 
@@ -182,6 +190,7 @@ header {
 
 .products__block {
   position: relative;
+  padding-bottom: 25px;
 }
 
 .products__block > div {
@@ -194,6 +203,7 @@ header {
   text-align: center;
   padding: 15px;
   margin-bottom: 25px;
+  border-radius: 5px;
 }
 
 .products__block .products__item_img {
@@ -202,18 +212,24 @@ header {
 
 .products__block .products__item .products__sell {
   border: 2px solid #bc303e;
-  padding: 5px 20px;
+  padding: 9px 20px;
   color: #222;
+  font-weight: 600;
   background: none;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .products__block .products__item .products__sell:hover {
   background: #bc303e;
   color: #fff;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .form1 {
   background: #000;
+  padding: 0 0 45px 0;
 }
 
 .form1 .row {
@@ -226,7 +242,9 @@ header {
 .form1 h2 {
   color: #fff;
   font-weight: 600;
-  padding-top: 25px;
+  padding-top: 45px;
+  margin: 0;
+  padding-bottom: 25px;
 }
 
 .form1 form > div {
@@ -235,7 +253,7 @@ header {
 }
 
 .form1 form span {
-  margin: 10px 25px;
+  margin: 20px 0px;
   float: left;
   width: 100%;
 }
@@ -243,12 +261,19 @@ header {
 .form1 form span input, .form1 form span textarea {
   width: 100%;
   display: block;
-  padding: 10px 10px;
+  padding: 20px 10px;
   border-radius: 5px;
+  border: 1px solid #f9f9f9;
+  background: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  padding-left: 45px;
+  color: #fff;
 }
 
 .form1 form span textarea {
   height: 125px;
+  padding-left: 15px;
 }
 
 .form1 form .form1__bottom {
@@ -276,7 +301,170 @@ header {
   -webkit-transition: 0.4s;
   transition: 0.4s;
   border: none;
+  padding: 0;
   width: 100%;
   float: left;
   max-width: 100%;
+}
+
+.form1 input.name {
+  background: url(../img/user.svg) no-repeat 12px center;
+  background-size: 20px;
+}
+
+.form1 input.mail {
+  background: url(../img/mail.svg) no-repeat 12px center;
+  background-size: 20px;
+}
+
+.form1 input.tel {
+  background: url(../img/tel_form.svg) no-repeat 12px center;
+  background-size: 20px;
+}
+
+.seo__text2 {
+  padding: 50px 0;
+}
+
+.reviews, .reviews__block {
+  float: left;
+  width: 100%;
+}
+
+.reviews__item {
+  border: 1px solid #d9d9d9;
+  padding: 30px 50px;
+  line-height: 1.5;
+  font-size: 17px;
+  width: calc(100% - 20px) !important;
+  border-radius: 5px;
+  margin-left: 10px;
+}
+
+.reviews__item:nth-child(odd) {
+  margin-right: 10px;
+}
+
+.reviews__item_name {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.reviews__item_stars {
+  float: left;
+  width: 100%;
+  margin: 2px 0 25px;
+}
+
+.reviews__item_stars_item {
+  background: url(../img/star.svg) no-repeat;
+  width: 15px;
+  height: 15px;
+  float: left;
+  margin-right: 5px;
+}
+
+.reviews {
+  padding-bottom: 50px;
+}
+
+.reviews .slick-prev, .reviews .slick-next {
+  background: url(../img/arrow.svg) no-repeat center center !important;
+  position: absolute;
+  top: calc(100% + 45px);
+  border: 1px solid #bc303e;
+  height: 50px;
+  width: 50px;
+  background-size: 50% !important;
+  left: calc(50% + 9px);
+}
+
+.reviews .slick-arrow:hover {
+  -webkit-box-shadow: 0px 0px 10px -3px inset #bc303e;
+  box-shadow: 0px 0px 10px -3px inset #bc303e;
+  background: url(../img/arrow.svg) no-repeat center center !important;
+  position: absolute;
+  top: calc(100% + 45px);
+  border: 1px solid #bc303e;
+  height: 50px;
+  width: 50px;
+  background-size: 50% !important;
+  left: calc(50% + 9px);
+}
+
+.reviews .slick-prev, .reviews .slick-prev:hover {
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
+  top: calc(100% + 20px);
+  left: calc(50% - 60px);
+}
+
+.reviews .slick-prev:before, .reviews .slick-next:before {
+  display: none;
+}
+
+footer {
+  background: #f5f5f5;
+  float: left;
+  width: 100%;
+  margin-top: 50px;
+  padding: 50px 0 0 0;
+}
+
+footer .footer__top {
+  padding-bottom: 30px;
+}
+
+footer .footer__menu1 ul li, footer .footer__menu2 ul li {
+  padding-bottom: 15px;
+}
+
+footer .footer__menu1 ul li a, footer .footer__menu2 ul li a {
+  text-aling: left;
+  font-weight: 600;
+  font-size: 17px;
+}
+
+footer .footer__info {
+  float: right;
+  text-align: right;
+}
+
+footer .footer__info_tel {
+  padding-bottom: 10px;
+}
+
+footer .footer__info_tel a {
+  color: #000000;
+  font-weight: 600;
+  font-size: 22px;
+  padding-bottom: 15px;
+}
+
+footer .footer__info_adress p {
+  padding-bottom: 5px;
+}
+
+footer .footer__info_mail {
+  padding-top: 5px;
+}
+
+footer .footer__info_mail a {
+  color: #bc303e;
+  font-weight: 600;
+  font-size: 17px;
+}
+
+footer .footer__bottom {
+  border-top: 1px solid #c4c4c4;
+  padding: 25px 0;
+}
+
+footer .footer__bottom .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }

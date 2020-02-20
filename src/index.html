@@ -7,6 +7,8 @@
 <title>Главная</title>
 <link rel="stylesheet" href="css/bootstrap.css">
 <link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/slick.css">
+<link rel="stylesheet" href="css/slick-theme.css">
 </head>
 <body>
   <header>
@@ -155,14 +157,14 @@
           <h2>Быстрая оценка любого устройства</h2>
           <form>
             <div class="col-xs-12 col-md-4"><span>
-                <input class="name" type="text"/></span></div>
+                <input class="name" type="text" placeholder="Имя"/></span></div>
             <div class="col-xs-12 col-md-4"><span>
-                <input class="tel" type="text"/></span></div>
+                <input class="tel" type="text" placeholder="Номер телефона"/></span></div>
             <div class="col-xs-12 col-md-4"><span>
-                <input class="mail" type="text"/></span></div>
+                <input class="mail" type="text" placeholder="E-mail"/></span></div>
             <div class="form1__bottom">
               <div class="col-xs-12 col-md-8"><span>
-                  <textarea class="message" name="message" cols="30" rows="10"></textarea></span></div>
+                  <textarea class="message" name="message" cols="30" rows="10" placeholder="Сообщение"></textarea></span></div>
               <div class="col-xs-12 col-md-4"><span>
                   <input class="form__button" type="submit" value="Быстрая оценка"/></span></div>
             </div>
@@ -184,7 +186,7 @@
         <div class="row">
           <h2>Отзывы</h2>
           <div class="reviews__block">
-            <div class="rewiews__item"> 
+            <div class="reviews__item"> 
               <div class="reviews__item_name">Иван Иванов</div>
               <div class="reviews__item_stars">
                 <div class="reviews__item_stars_item"></div>
@@ -195,7 +197,7 @@
               </div>
               <div class="reviews__item_text">Менеджеры отработали очень хорошо.Нужен был маленький ноутбук для учебы.Предложили несколько вариантов.Сразу показали недостатки на всех ноутах ,от пятен на экране до батареи.Есть небольшая гарантия, в течении недели можно вернуть обратно. Есть один минус. Не дозвониться по указанному телефону на сайте. В принципе. Ехали наугад. Да и уже дома обнаружили ,что нам отдали только половину зарядки. Нет сетевого кабеля.Скорее это недоразумение.Но дозвониться опять не смогли. Магазин рекомендую.</div>
             </div>
-            <div class="rewiews__item"> 
+            <div class="reviews__item"> 
               <div class="reviews__item_name">Иван Иванов</div>
               <div class="reviews__item_stars">
                 <div class="reviews__item_stars_item"></div>
@@ -206,7 +208,7 @@
               </div>
               <div class="reviews__item_text">Менеджеры отработали очень хорошо.Нужен был маленький ноутбук для учебы.Предложили несколько вариантов.Сразу показали недостатки на всех ноутах ,от пятен на экране до батареи.Есть небольшая гарантия, в течении недели можно вернуть обратно. Есть один минус. Не дозвониться по указанному телефону на сайте. В принципе. Ехали наугад. Да и уже дома обнаружили ,что нам отдали только половину зарядки. Нет сетевого кабеля.Скорее это недоразумение.Но дозвониться опять не смогли. Магазин рекомендую.</div>
             </div>
-            <div class="rewiews__item"> 
+            <div class="reviews__item"> 
               <div class="reviews__item_name">Иван Иванов</div>
               <div class="reviews__item_stars">
                 <div class="reviews__item_stars_item"></div>
@@ -217,7 +219,7 @@
               </div>
               <div class="reviews__item_text">Менеджеры отработали очень хорошо.Нужен был маленький ноутбук для учебы.Предложили несколько вариантов.Сразу показали недостатки на всех ноутах ,от пятен на экране до батареи.Есть небольшая гарантия, в течении недели можно вернуть обратно. Есть один минус. Не дозвониться по указанному телефону на сайте. В принципе. Ехали наугад. Да и уже дома обнаружили ,что нам отдали только половину зарядки. Нет сетевого кабеля.Скорее это недоразумение.Но дозвониться опять не смогли. Магазин рекомендую.</div>
             </div>
-            <div class="rewiews__item"> 
+            <div class="reviews__item"> 
               <div class="reviews__item_name">Иван Иванов</div>
               <div class="reviews__item_stars">
                 <div class="reviews__item_stars_item"></div>
@@ -228,28 +230,28 @@
               </div>
               <div class="reviews__item_text">Менеджеры отработали очень хорошо.Нужен был маленький ноутбук для учебы.Предложили несколько вариантов.Сразу показали недостатки на всех ноутах ,от пятен на экране до батареи.Есть небольшая гарантия, в течении недели можно вернуть обратно. Есть один минус. Не дозвониться по указанному телефону на сайте. В принципе. Ехали наугад. Да и уже дома обнаружили ,что нам отдали только половину зарядки. Нет сетевого кабеля.Скорее это недоразумение.Но дозвониться опять не смогли. Магазин рекомендую.</div>
             </div>
-          </div>
-          <div class="rewiews__item"> 
-            <div class="reviews__item_name">Иван Иванов</div>
-            <div class="reviews__item_stars">
-              <div class="reviews__item_stars_item"></div>
-              <div class="reviews__item_stars_item"></div>
-              <div class="reviews__item_stars_item"></div>
-              <div class="reviews__item_stars_item"></div>
-              <div class="reviews__item_stars_item"></div>
+            <div class="reviews__item"> 
+              <div class="reviews__item_name">Иван Иванов</div>
+              <div class="reviews__item_stars">
+                <div class="reviews__item_stars_item"></div>
+                <div class="reviews__item_stars_item"></div>
+                <div class="reviews__item_stars_item"></div>
+                <div class="reviews__item_stars_item"></div>
+                <div class="reviews__item_stars_item"></div>
+              </div>
+              <div class="reviews__item_text">Менеджеры отработали очень хорошо.Нужен был маленький ноутбук для учебы.Предложили несколько вариантов.Сразу показали недостатки на всех ноутах ,от пятен на экране до батареи.Есть небольшая гарантия, в течении недели можно вернуть обратно. Есть один минус. Не дозвониться по указанному телефону на сайте. В принципе. Ехали наугад. Да и уже дома обнаружили ,что нам отдали только половину зарядки. Нет сетевого кабеля.Скорее это недоразумение.Но дозвониться опять не смогли. Магазин рекомендую.</div>
             </div>
-            <div class="reviews__item_text">Менеджеры отработали очень хорошо.Нужен был маленький ноутбук для учебы.Предложили несколько вариантов.Сразу показали недостатки на всех ноутах ,от пятен на экране до батареи.Есть небольшая гарантия, в течении недели можно вернуть обратно. Есть один минус. Не дозвониться по указанному телефону на сайте. В принципе. Ехали наугад. Да и уже дома обнаружили ,что нам отдали только половину зарядки. Нет сетевого кабеля.Скорее это недоразумение.Но дозвониться опять не смогли. Магазин рекомендую.</div>
-          </div>
-          <div class="rewiews__item"> 
-            <div class="reviews__item_name">Иван Иванов</div>
-            <div class="reviews__item_stars">
-              <div class="reviews__item_stars_item"></div>
-              <div class="reviews__item_stars_item"></div>
-              <div class="reviews__item_stars_item"></div>
-              <div class="reviews__item_stars_item"></div>
-              <div class="reviews__item_stars_item"></div>
+            <div class="reviews__item"> 
+              <div class="reviews__item_name">Иван Иванов</div>
+              <div class="reviews__item_stars">
+                <div class="reviews__item_stars_item"></div>
+                <div class="reviews__item_stars_item"></div>
+                <div class="reviews__item_stars_item"></div>
+                <div class="reviews__item_stars_item"></div>
+                <div class="reviews__item_stars_item"></div>
+              </div>
+              <div class="reviews__item_text">Менеджеры отработали очень хорошо.Нужен был маленький ноутбук для учебы.Предложили несколько вариантов.Сразу показали недостатки на всех ноутах ,от пятен на экране до батареи.Есть небольшая гарантия, в течении недели можно вернуть обратно. Есть один минус. Не дозвониться по указанному телефону на сайте. В принципе. Ехали наугад. Да и уже дома обнаружили ,что нам отдали только половину зарядки. Нет сетевого кабеля.Скорее это недоразумение.Но дозвониться опять не смогли. Магазин рекомендую.</div>
             </div>
-            <div class="reviews__item_text">Менеджеры отработали очень хорошо.Нужен был маленький ноутбук для учебы.Предложили несколько вариантов.Сразу показали недостатки на всех ноутах ,от пятен на экране до батареи.Есть небольшая гарантия, в течении недели можно вернуть обратно. Есть один минус. Не дозвониться по указанному телефону на сайте. В принципе. Ехали наугад. Да и уже дома обнаружили ,что нам отдали только половину зарядки. Нет сетевого кабеля.Скорее это недоразумение.Но дозвониться опять не смогли. Магазин рекомендую.</div>
           </div>
         </div>
       </div>
@@ -259,8 +261,8 @@
     <div class="footer__top">
       <div class="container"> 
         <div class="row">
-          <div class="footer__logo"><img src="logo.png" alt="логотип"/></div>
-          <div class="footer__menu1">
+          <div class="col-xs-12 col md-3 footer__logo"><img src="img/logo.png" alt="логотип"/></div>
+          <div class="col-xs-12 col md-3 footer__menu1">
             <ul>
               <li><a>Продать ноутбук</a></li>
               <li><a>Продать ноутбук</a></li>
@@ -271,14 +273,14 @@
               <li><a>Продать ноутбук</a></li>
             </ul>
           </div>
-          <div class="footer__menu2">
+          <div class="col-xs-12 col md-3 footer__menu2">
             <ul>
               <li><a>Блог</a></li>
               <li><a>О нас</a></li>
               <li><a>Контакты</a></li>
             </ul>
           </div>
-          <div class="footer__info">
+          <div class="col-xs-12 col-md-3 footer__info">
             <div class="footer__info_tel"><a href="tel:88127010653">8 (812) 701-06-53</a></div>
             <div class="footer__info_adress"> 
               <p>Санкт-Петербург</p>
@@ -300,6 +302,8 @@
     </div>
   </footer>
   <!-- ------------------- scripts ------------------------->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="js/bootstrap.js"></script>
+  <script src="js/slick.js"></script>
   <script src="js/scripts.js"></script>
 </body></html>
