@@ -1,4 +1,16 @@
 $red: #bc303e
+@mixin button
+    background: linear-gradient(to bottom, #d64150 0%, $red 100%) !important
+    box-shadow: 0 4px 0 0 #861c27, 0 9px 9px 0 rgba(0, 0, 0, 0.35) !important
+    border: none
+    height: 55px
+    max-width: 190px
+    width: 100%
+    border-radius: 5px
+    color: #ffffff
+    font-size: 18px
+    transition: 0.4s
+    border: none
 
 
 @import url('https://fonts.googleapis.com/css?family=Exo+2:300,400,600,700&display=swap&subset=cyrillic');
@@ -9,6 +21,8 @@ body
     padding: 0
     color: #222
     line-height: 1.2
+button, a, input
+    outline: none !important
 p 
     padding: 0
     margin: 0
@@ -19,8 +33,11 @@ li
     list-style: none
 img 
     max-width: 100%
+h2 
+    text-align: center
+    padding-bottom: 25px
 header
-    padding-top: 20px
+    padding-top: 15px
     padding-bottom: 30px
 .header__box
     width: 100%
@@ -78,22 +95,81 @@ header
             padding: 5px 0
             font-size: 18px
     button.sell 
-        background: linear-gradient(to bottom, #d64150 0%, $red 100%) !important
-        box-shadow: 0 4px 0 0 #861c27, 0 9px 9px 0 rgba(0, 0, 0, 0.35) !important
-        border: none
-        height: 55px
-        max-width: 190px
-        width: 100%
-        border-radius: 5px
-        color: #ffffff
-        font-size: 18px
-        transition: 0.4s
+        @include button
         &:hover
-            box-shadow: 0 3px 0 0 #861c27, 0 6px 6px 0 rgba(0, 0, 0, 0.35) !important
+            box-shadow: 0 4px 0 0 #861c27, 0 7px 7px 0 rgba(0, 0, 0, 0.35) !important
             transition: 0.4s
+        &:focus
+            box-shadow: 0 2px 0 0 #861c27, 0 7px 7px 0 rgba(0, 0, 0, 0.35) !important
+            position: relative
+            top: 2px
+            height: 57px
 .seo__text1
     text-align: left
     text-indent: 15px
     padding-bottom: 30px
     p 
         padding-bottom: 10px
+.products .row
+    flex-direction: column
+    h2 
+
+.products__block
+    position: relative
+    >div
+        float: left
+    .products__item
+        position: relative  
+        border: 1px solid #dddddd
+        text-align: center
+        padding: 15px
+        margin-bottom: 25px
+        &_img
+            padding-bottom: 20px
+        .products__sell
+            border: 2px solid $red
+            padding: 5px 20px
+            color: #222
+            background: none
+            &:hover
+                background: $red
+                color: #fff
+.form1
+    background: #000
+    .row
+        flex-direction: column
+    h2 
+        color: #fff
+        font-weight: 600
+        padding-top: 25px
+    form 
+        >div
+            position: relative
+            float: left
+        span
+            margin: 10px 25px
+            float: left
+            width: 100%
+            input, textarea
+                width: 100%
+                display: block
+                padding: 10px 10px
+                border-radius: 5px
+                border:none
+            textarea
+                height: 125px
+        .form1__bottom
+                width: 100%
+                display: flex
+                align-items: center
+    .form__button
+        @include button
+        width: 100%
+        float: left
+        max-width: 100%
+
+    
+            
+
+
+

@@ -7,6 +7,10 @@ body {
   line-height: 1.2;
 }
 
+button, a, input {
+  outline: none !important;
+}
+
 p {
   padding: 0;
   margin: 0;
@@ -25,8 +29,13 @@ img {
   max-width: 100%;
 }
 
+h2 {
+  text-align: center;
+  padding-bottom: 25px;
+}
+
 header {
-  padding-top: 20px;
+  padding-top: 15px;
   padding-bottom: 30px;
 }
 
@@ -136,13 +145,22 @@ header {
   font-size: 18px;
   -webkit-transition: 0.4s;
   transition: 0.4s;
+  border: none;
 }
 
 .sell__banner_content button.sell:hover {
-  -webkit-box-shadow: 0 3px 0 0 #861c27, 0 6px 6px 0 rgba(0, 0, 0, 0.35) !important;
-  box-shadow: 0 3px 0 0 #861c27, 0 6px 6px 0 rgba(0, 0, 0, 0.35) !important;
+  -webkit-box-shadow: 0 4px 0 0 #861c27, 0 7px 7px 0 rgba(0, 0, 0, 0.35) !important;
+  box-shadow: 0 4px 0 0 #861c27, 0 7px 7px 0 rgba(0, 0, 0, 0.35) !important;
   -webkit-transition: 0.4s;
   transition: 0.4s;
+}
+
+.sell__banner_content button.sell:focus {
+  -webkit-box-shadow: 0 2px 0 0 #861c27, 0 7px 7px 0 rgba(0, 0, 0, 0.35) !important;
+  box-shadow: 0 2px 0 0 #861c27, 0 7px 7px 0 rgba(0, 0, 0, 0.35) !important;
+  position: relative;
+  top: 2px;
+  height: 57px;
 }
 
 .seo__text1 {
@@ -153,4 +171,112 @@ header {
 
 .seo__text1 p {
   padding-bottom: 10px;
+}
+
+.products .row {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.products__block {
+  position: relative;
+}
+
+.products__block > div {
+  float: left;
+}
+
+.products__block .products__item {
+  position: relative;
+  border: 1px solid #dddddd;
+  text-align: center;
+  padding: 15px;
+  margin-bottom: 25px;
+}
+
+.products__block .products__item_img {
+  padding-bottom: 20px;
+}
+
+.products__block .products__item .products__sell {
+  border: 2px solid #bc303e;
+  padding: 5px 20px;
+  color: #222;
+  background: none;
+}
+
+.products__block .products__item .products__sell:hover {
+  background: #bc303e;
+  color: #fff;
+}
+
+.form1 {
+  background: #000;
+}
+
+.form1 .row {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.form1 h2 {
+  color: #fff;
+  font-weight: 600;
+  padding-top: 25px;
+}
+
+.form1 form > div {
+  position: relative;
+  float: left;
+}
+
+.form1 form span {
+  margin: 10px 25px;
+  float: left;
+  width: 100%;
+}
+
+.form1 form span input, .form1 form span textarea {
+  width: 100%;
+  display: block;
+  padding: 10px 10px;
+  border-radius: 5px;
+}
+
+.form1 form span textarea {
+  height: 125px;
+}
+
+.form1 form .form1__bottom {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.form1 .form__button {
+  background: -webkit-gradient(linear, left top, left bottom, from(#d64150), to(#bc303e)) !important;
+  background: linear-gradient(to bottom, #d64150 0%, #bc303e 100%) !important;
+  -webkit-box-shadow: 0 4px 0 0 #861c27, 0 9px 9px 0 rgba(0, 0, 0, 0.35) !important;
+  box-shadow: 0 4px 0 0 #861c27, 0 9px 9px 0 rgba(0, 0, 0, 0.35) !important;
+  border: none;
+  height: 55px;
+  max-width: 190px;
+  width: 100%;
+  border-radius: 5px;
+  color: #ffffff;
+  font-size: 18px;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  border: none;
+  width: 100%;
+  float: left;
+  max-width: 100%;
 }
