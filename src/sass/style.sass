@@ -3,7 +3,7 @@ $red: #bc303e
     background: linear-gradient(to bottom, #d64150 0%, $red 100%) !important
     box-shadow: 0 4px 0 0 #861c27, 0 9px 9px 0 rgba(0, 0, 0, 0.35) !important
     border: none
-    height: 55px
+    height: 62px
     max-width: 190px
     width: 100%
     border-radius: 5px
@@ -20,7 +20,7 @@ body
     font-family: 'Exo 2'
     margin: 0
     padding: 0
-    color: #222
+    color: #1d1d1d
     line-height: 1.2
 button, a, input, textarea
     outline: none !important
@@ -80,6 +80,10 @@ header
     float: left
     width: 100%
     padding: 35px
+    &_box
+        display: flex
+        align-items: center
+        width: 100%
 .sell__banner_img
     float: left
     width: 60%
@@ -97,6 +101,9 @@ header
         li 
             padding: 5px 0
             font-size: 18px
+            background: url(../img/check.svg) no-repeat left center
+            background-size: 10px
+            padding-left: 20px
     button.sell 
         @include button
         max-width: 260px
@@ -107,8 +114,8 @@ header
             box-shadow: 0 2px 0 0 #861c27, 0 7px 7px 0 rgba(0, 0, 0, 0.35) !important
             position: relative
             top: 2px
-            height: 57px
-.seo__text1, .seo__text2
+            height: 64px
+.seo__text1, .seo__text2, .seo__text3
     text-align: left
     text-indent: 15px
     padding-bottom: 50px
@@ -150,6 +157,8 @@ header
 .form1
     background: #000
     padding: 0 0 45px 0
+    float: left
+    width: 100%
     .row
         flex-direction: column
     h2 
@@ -188,6 +197,8 @@ header
         width: 100%
         float: left
         max-width: 100%
+        background-image: url(../img/calc.svg) no-repeat
+
     input.name 
         background: url(../img/user.svg) no-repeat 12px center 
         background-size: 20px
@@ -225,6 +236,8 @@ header
         height: 15px
         float: left
         margin-right: 5px
+    .grey
+        background: url(../img/star0.svg) no-repeat
 .reviews
     padding-bottom: 50px
     .slick-prev, .slick-next
@@ -265,9 +278,10 @@ footer
             li
                 padding-bottom: 15px 
                 a
-                    text-aling: left
+                    text-align: left
                     font-weight: 600
                     font-size: 17px 
+                    
     .footer__info
         float: right
         text-align: right
@@ -294,7 +308,21 @@ footer
             display: flex
             justify-content: space-between
 
-        
 
+    
+    //inner
+
+.breadcrumbs
+    border-bottom: 1px solid #d9d9d9
+    padding: 13px 0
+    a 
+        color: $red
+        padding-right: 30px
+        background: url(../img/arrow2.svg) no-repeat right 3px
+        background-size: 18px 13px
+        margin-right: 13px
+        font-size: 14px
+    span
+        font-size: 14px
 
 

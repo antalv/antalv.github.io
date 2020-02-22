@@ -4,11 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport"content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Главная</title>
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/style.css">
+    <title>Внутренняя</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/slick.css">
     <link rel="stylesheet" href="css/slick-theme.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/main.css">
 </head>
 
 body
@@ -41,15 +42,24 @@ body
                             a(href="#") Блог
                         li
                             a(href="#") Контакты
+        .breadcrumbs
+            .container
+                .row
+                    ul
+                        li
+                            span
+                                a(href="/") Главная
+                            span Продать телефон
+                
     section.main
         .sell__banner
             .container
                 .row
                     .sell__banner_box
                         .sell__banner_img
-                            img(src="img/tech.png", alt="техника")
+                            img(src="img/phone.png", alt="техника")
                         .sell__banner_content
-                            h1 Продай ноутбук
+                            h1 Продай телефон
                             p за 10 минут
                             ul
                                 li Деньги за 10 минут
@@ -63,71 +73,59 @@ body
                     p Таким образом сложившаяся структура организации способствует подготовки и реализации соответствующий условий активизации. С другой стороны сложившаяся структура организации влечет за собой процесс внедрения и модернизации систем массового участия. Равным образом постоянный количественный рост и сфера нашей активности представляет собой интересный эксперимент проверки позиций, занимаемых участниками в отношении поставленных задач.
                     p Товарищи! новая модель организационной деятельности представляет собой интересный эксперимент проверки существенных финансовых и административных условий. Товарищи! постоянный количественный рост и сфера нашей активности требуют определения и уточнения позиций, занимаемых участниками в отношении поставленных задач.
                     p Товарищи! дальнейшее развитие различных форм деятельности обеспечивает широкому кругу (специалистов) участие в формировании систем массового участия. С другой стороны начало повседневной работы по формированию позиции представляет собой интересный эксперимент проверки направлений прогрессивного развития. С другой стороны начало повседневной работы по формированию позиции требуют определения и уточнения соответствующий условий активизации. Таким образом постоянный количественный рост и сфера нашей активности позволяет оценить значение форм развития.
-        .products   
+        .products.products_inner
             .container  
                 .row
-                    h2 Что скупаем
+                    h2 Какие телефоны мы покупаем
                     .products__block
-                        .col-xs-12.col-md-3
+                        .col-xs-12.col-md-4
+                            .products__item
+                                .products__item_img
+                                    img(src="img/phone.png", alt="техника")
+                                .products__name Продать ноутбук
+                                .products__desc Мы покупаем iPhone в исправном состоянии не старше модели iPhone 6s.
+                        .col-xs-12.col-md-4
+                            .products__item
+                                .products__item_img
+                                    img(src="img/phone2.png", alt="техника")
+                                .products__name Продать ноутбук
+                                .products__desc Мы покупаем iPhone в исправном состоянии не старше модели iPhone 6s.
+                        .col-xs-12.col-md-4
                             .products__item
                                 .products__item_img
                                     img(src="img/tech.png", alt="техника")
-                                button.products__sell Продать ноутбук
-                        .col-xs-12.col-md-3
-                            .products__item
-                                .products__item_img
-                                    img(src="img/tech.png", alt="техника")
-                                button.products__sell Продать ноутбук
-                        .col-xs-12.col-md-3
-                            .products__item
-                                .products__item_img
-                                    img(src="img/tech.png", alt="техника")
-                                button.products__sell Продать ноутбук
-                        .col-xs-12.col-md-3
-                            .products__item
-                                .products__item_img
-                                    img(src="img/tech.png", alt="техника")
-                                button.products__sell Продать ноутбук
-                        .col-xs-12.col-md-3
-                            .products__item
-                                .products__item_img
-                                    img(src="img/tech.png", alt="техника")
-                                button.products__sell Продать ноутбук
-                        .col-xs-12.col-md-3
-                            .products__item
-                                .products__item_img
-                                    img(src="img/tech.png", alt="техника")
-                                button.products__sell Продать ноутбук
-                        .col-xs-12.col-md-3
-                            .products__item
-                                .products__item_img
-                                    img(src="img/tech.png", alt="техника")
-                                button.products__sell Продать ноутбук
-                        .col-xs-12.col-md-3
-                            .products__item
-                                .products__item_img
-                                    img(src="img/tech.png", alt="техника")
-                                button.products__sell Продать ноутбук
-                        .col-xs-12.col-md-3
-                            .products__item
-                                .products__item_img
-                                    img(src="img/tech.png", alt="техника")
-                                button.products__sell Продать ноутбук
-                        .col-xs-12.col-md-3
-                            .products__item
-                                .products__item_img
-                                    img(src="img/tech.png", alt="техника")
-                                button.products__sell Продать ноутбук
-                        .col-xs-12.col-md-3
-                            .products__item
-                                .products__item_img
-                                    img(src="img/tech.png", alt="техника")
-                                button.products__sell Продать ноутбук
-                        .col-xs-12.col-md-3
-                            .products__item
-                                .products__item_img
-                                    img(src="img/tech.png", alt="техника")
-                                button.products__sell Продать ноутбук
+                                .products__name Продать ноутбук
+                                .products__desc Мы покупаем iPhone в исправном состоянии не старше модели iPhone 6s.
+        .seo__text2
+            .container  
+                .row
+                    p Таким образом сложившаяся структура организации способствует подготовки и реализации соответствующий условий активизации. С другой стороны сложившаяся структура организации влечет за собой процесс внедрения и модернизации систем массового участия. Равным образом постоянный количественный рост и сфера нашей активности представляет собой интересный эксперимент проверки позиций, занимаемых участниками в отношении поставленных задач.
+                    p Товарищи! новая модель организационной деятельности представляет собой интересный эксперимент проверки существенных финансовых и административных условий. Товарищи! постоянный количественный рост и сфера нашей активности требуют определения и уточнения позиций, занимаемых участниками в отношении поставленных задач.
+                    p Товарищи! дальнейшее развитие различных форм деятельности обеспечивает широкому кругу (специалистов) участие в формировании систем массового участия. С другой стороны начало повседневной работы по формированию позиции представляет собой интересный эксперимент проверки направлений прогрессивного развития. С другой стороны начало повседневной работы по формированию позиции требуют определения и уточнения соответствующий условий активизации. Таким образом постоянный количественный рост и сфера нашей активности позволяет оценить значение форм развития.
+        .sell__banner
+            .container
+                .row
+                h2 Продать телефон в Refresh выгодно
+                .sell__banner_desc Наш сервис по покупке телефонов создан специально для людей, ценящих своё время и желающих продать телефон с максимальной выгодой, быстро просто, безопасно и по честной цене.
+                .sell__banner_items
+                    .col-xs-6.col-md-2.sell__banner_item
+                        img(src="/img/tel.svg", alt="")
+                        p Деньги за 15 минут
+                        .col-xs-6.col-md-2.sell__banner_item
+                        img(src="/img/tel.svg", alt="")
+                        p Деньги за 15 минут
+                        .col-xs-6.col-md-2.sell__banner_item
+                        img(src="/img/tel.svg", alt="")
+                        p Деньги за 15 минут
+                        .col-xs-6.col-md-2.sell__banner_item
+                        img(src="/img/tel.svg", alt="")
+                        p Деньги за 15 минут
+                        .col-xs-6.col-md-2.sell__banner_item
+                        img(src="/img/tel.svg", alt="")
+                        p Деньги за 15 минут
+                        .col-xs-6.col-md-2.sell__banner_item
+                        img(src="/img/tel.svg", alt="")
+                        p Деньги за 15 минут
         .form1
             .container
                 .row
@@ -149,12 +147,109 @@ body
                             .col-xs-12.col-md-4
                                 span
                                     input.form__button(type="submit", value="Быстрая оценка")
-        .seo__text2
+        .benefits
+            .container
+                .row
+                    h2 Выгодно ли продавать телефон в Refresh?
+                    .benefits__desc Мы подготовили сравнительную таблицу наиболее популярных способов продать телефон (на мобильных устройствах вы можете листать таблицу вправо и влево):
+                    <table class="l-block_3__table">
+                    <tbody>
+                    <tr>
+                    <td class="l-block_3__table-heading">Продаём Apple iPhone</td>
+                    <td class="l-block_3__table-cell l-block_3__table-green l-block_3__table-heading">Refresh маркет-сервис</td>
+                    <td class="l-block_3__table-cell l-block_3__table-heading">Обычная продажа</td>
+                    <td class="l-block_3__table-cell l-block_3__table-heading">Перекупщики и небольшие компании</td>
+                    </tr>
+                    <tr>
+                    <td class="l-block_3__table-subheading">Сроки продажи:</td>
+                    <td class="l-block_3__table-cell l-block_3__table-green">Не более 15 минут</td>
+                    <td class="l-block_3__table-cell">От 7 до 30 дней</td>
+                    <td class="l-block_3__table-cell">До 1 часа</td>
+                    </tr>
+                    <tr>
+                    <td class="l-block_3__table-subheading">Удобство:</td>
+                    <td class="l-block_3__table-cell l-block_3__table-green">Уютный магазин в центре</td>
+                    <td class="l-block_3__table-cell">Встречи у метро</td>
+                    <td class="l-block_3__table-cell">Встречи у метро, дома или в подвале</td>
+                    </tr>
+                    <tr>
+                    <td class="l-block_3__table-subheading">Простота:</td>
+                    <td class="l-block_3__table-cell l-block_3__table-green">Всегда понятные сумма и условия</td>
+                    <td class="l-block_3__table-cell">Непонятные условия и сроки продажи</td>
+                    <td class="l-block_3__table-cell">Непонятна конечная цена продажи, занижение</td>
+                    </tr>
+                    <tr>
+                    <td class="l-block_3__table-subheading">Безопасность:</td>
+                    <td class="l-block_3__table-cell l-block_3__table-green">100% безопасно, договор</td>
+                    <td class="l-block_3__table-cell">Возможно мошенничество, 50/50</td>
+                    <td class="l-block_3__table-cell">Обычно безопасно</td>
+                    </tr>
+                    <tr>
+                    <td class="l-block_3__table-subheading">Торг:</td>
+                    <td class="l-block_3__table-cell l-block_3__table-green">Всегда без торга</td>
+                    <td class="l-block_3__table-cell">Почти в 100% случаев</td>
+                    <td class="l-block_3__table-cell">Занижение стоимости на месте</td>
+                    </tr>
+                    <tr>
+                    <td class="l-block_3__table-subheading">Итого:</td>
+                    <td class="l-block_3__table-cell l-block_3__table-green"><b>25 000 руб. без торга</b></td>
+                    <td class="l-block_3__table-cell"><b>30 000 руб. +торг</b></td>
+                    <td class="l-block_3__table-cell"><b>15 000-20 000 руб. +торг</b></td>
+                    </tr>
+                    </tbody>
+                    </table>
+                <div class="l-quotes">
+                <div class="l-quotes__text">
+                <p>Из этой таблицы каждый может сделать выбор в пользу того или иного варианта. Каждому человеку подойдёт что-то своё. Мы, в свою очерередь, приложили все силы, что бы сделать наш сервис наиболее удобным и практичным.</p>
+                </div>
+                <p class="l-quotes__slogan">Быстро. Просто. Безопасно.</p>
+                <p class="l-quotes__author">ReFresh</p>
+                </div>
+        .seo__text3
             .container  
                 .row
                     p Таким образом сложившаяся структура организации способствует подготовки и реализации соответствующий условий активизации. С другой стороны сложившаяся структура организации влечет за собой процесс внедрения и модернизации систем массового участия. Равным образом постоянный количественный рост и сфера нашей активности представляет собой интересный эксперимент проверки позиций, занимаемых участниками в отношении поставленных задач.
                     p Товарищи! новая модель организационной деятельности представляет собой интересный эксперимент проверки существенных финансовых и административных условий. Товарищи! постоянный количественный рост и сфера нашей активности требуют определения и уточнения позиций, занимаемых участниками в отношении поставленных задач.
                     p Товарищи! дальнейшее развитие различных форм деятельности обеспечивает широкому кругу (специалистов) участие в формировании систем массового участия. С другой стороны начало повседневной работы по формированию позиции представляет собой интересный эксперимент проверки направлений прогрессивного развития. С другой стороны начало повседневной работы по формированию позиции требуют определения и уточнения соответствующий условий активизации. Таким образом постоянный количественный рост и сфера нашей активности позволяет оценить значение форм развития.
+        .howto
+            .container
+                .row
+                h2 Как продать телефон
+                <div class="l-block_4__list">
+                <div class="l-block_4__item l-block_4__item--decorated"><span class="l-block_4__item-image"><img src="/img/icon_3_1.png" alt="Шаг 1"></span>
+                <p class="l-block_4__item-step">Шаг 1</p>
+                <p class="l-block_4__item-title">Оценка (3 мин.)</p>
+                <p class="l-block_4__item-text">Позвоните нам или<br> закажите звонок.<br> Назовите модель телефона<br> и узнайте его стоимость.</p>
+                </div>
+                <div class="l-block_4__item l-block_4__item--decorated"><span class="l-block_4__item-image"><img src="/img/icon_3_2.png" alt="Шаг 2"></span>
+                <p class="l-block_4__item-step">Шаг 2</p>
+                <p class="l-block_4__item-title">Диагностика (10 мин.)</p>
+                <p class="l-block_4__item-text">Мы проверяем<br> характеристики и состояние<br> вашего телефона.</p>
+                </div>
+                <div class="l-block_4__item"><span class="l-block_4__item-image"><img src="/img/icon_3_3.png" alt="Шаг 3"></span>
+                <p class="l-block_4__item-step">Шаг 3</p>
+                <p class="l-block_4__item-title">Вы получаете деньги</p>
+                <p class="l-block_4__item-text">Составляем договор,<br> а так же бесплатно<br> удаляем или переносим<br> информацию с устройства.</p>
+                </div>
+                </div>
+        .faq
+            .container
+                .row
+                    h2 Часто задаваемые вопросы
+                    .faq__items#accordion
+                        .card
+                            .card-header#headingOne
+                                button.faq__title.btn.btn-link(data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne") Какие ноутбуки я могу продать
+                            .collapse#collapseOne(aria-labelledby="headingOne" data-parent="#accordion")
+                                .card-body Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+
+                        .card
+                            .card-header#headingtwo
+                                button.faq__title.btn.btn-link(data-toggle="collapse" data-target="#collapsetwo" aria-expanded="true" aria-controls="collapsetwo") Какие ноутбуки я могу продать
+                            .collapse#collapsetwo(aria-labelledby="headingtwo" data-parent="#accordion")
+                                .card-body Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+
+
         .reviews
             .container
                 .row
@@ -217,6 +312,42 @@ body
                                 .reviews__item_stars_item
                                 .reviews__item_stars_item
                             .reviews__item_text Менеджеры отработали очень хорошо.Нужен был маленький ноутбук для учебы.Предложили несколько вариантов.Сразу показали недостатки на всех ноутах ,от пятен на экране до батареи.Есть небольшая гарантия, в течении недели можно вернуть обратно. Есть один минус. Не дозвониться по указанному телефону на сайте. В принципе. Ехали наугад. Да и уже дома обнаружили ,что нам отдали только половину зарядки. Нет сетевого кабеля.Скорее это недоразумение.Но дозвониться опять не смогли. Магазин рекомендую.
+    .form1
+            .container
+                .row
+                    h2 Быстрая оценка любого устройства
+                    form
+                        .col-xs-12.col-md-4
+                            span
+                                input.name(type="text", placeholder="Имя")
+                        .col-xs-12.col-md-4
+                            span
+                                input.tel(type="text", placeholder="Номер телефона")
+                        .col-xs-12.col-md-4
+                            span
+                                input.mail(type="text", placeholder="E-mail")
+                        .form1__bottom
+                            .col-xs-12.col-md-8
+                                span
+                                    textarea.message(name="message", cols="30", rows="10", placeholder="Сообщение")
+                            .col-xs-12.col-md-4
+                                span
+                                    input.form__button(type="submit", value="Быстрая оценка")
+    .map карта
+    .form1.form2
+            .container
+                .row
+                    h2 Остались вопросы
+                    form
+                        .col-xs-12.col-md-8
+                            span
+                                textarea.message(name="message", cols="30", rows="10", placeholder="Сообщение")
+                        .col-xs-12.col-md-4   
+                            span
+                                input.mail(type="text", placeholder="E-mail")
+                                span
+                                    input.form__button(type="submit", value="Задать вопрос")
+
     footer
         .footer__top
             .container  
@@ -266,8 +397,8 @@ body
             
                 
     // ------------------- scripts -----------------------
-    script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js")
-    script(src="js/bootstrap.min.js")
+    script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js")
+    script(src="js/bootstrap.js")
     script(src="js/slick.js")
     script(src="js/scripts.js")
 
