@@ -1,13 +1,18 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,800&display=swap&subset=cyrillic");
 body {
   font-family: montserrat;
+  background: #f8f8f8;
+}
+
+header {
+  background: #fff;
 }
 
 header .header_box {
   padding: 15px 0;
 }
 
-header .header_box .logo {
+header .logo {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -16,14 +21,14 @@ header .header_box .logo {
   align-items: center;
 }
 
-header .header_box .logo p {
+header .logo p {
   padding: 0 20px 0 35px;
   margin: 0;
   font-size: 14px;
   font-weight: 600;
 }
 
-header .header_box .tel {
+header .tel {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -36,14 +41,14 @@ header .header_box .tel {
   align-items: flex-end;
 }
 
-header .header_box .tel a {
+header .tel a {
   font-size: 18px;
   font-weight: 700;
   color: #222222;
   padding-bottom: 6px;
 }
 
-header .header_box .contact1 {
+header .contact1 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -56,20 +61,46 @@ header .header_box .contact1 {
   flex-direction: column;
 }
 
-header .header_box .contact1 p {
+header .contact1 p {
   font-weight: 500;
   margin: 0px 0;
   font-size: 14px;
 }
 
-header .header_box .contact1 button {
+header .contact1 button {
   background: #fe8839;
   border: none;
   -webkit-box-shadow: none;
   box-shadow: none;
   color: #ffffff;
-  padding: 5px 17px;
+  padding: 8px 20px;
   margin-top: 15px;
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 0.5px;
+  font-weight: 600;
+}
+
+a {
+  color: #0a6baf;
+}
+
+h1 {
+  font-size: 32px;
+}
+
+h2 {
+  font-size: 26px;
+  font-weight: 600;
+}
+
+h3 {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+img {
+  max-width: 100%;
 }
 
 ul {
@@ -91,8 +122,9 @@ li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-  justify-content: space-around;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
@@ -114,16 +146,192 @@ li {
 .main_block .container {
   -webkit-box-shadow: 0 0px 10px 0 #eaeaea;
   box-shadow: 0 0px 10px 0 #eaeaea;
+  background: #fff;
   z-index: 2;
   position: relative;
-  padding-top: 25px;
+  padding-top: 20px;
 }
 
-.main_block .container .left_menu {
-  background: #eaeaea;
+.main_block .container .left_menu > ul > {
+  background: #ffffff;
+}
+
+.main_block .container .left_menu > ul > a {
   background: #0a6baf;
+  float: left;
+  width: 100%;
+  color: #ffffff;
+  padding: 10px 15px;
+  font-weight: 700;
 }
 
-.main_block .container .left_menu li {
+.main_block .container .left_menu > ul > ul > li {
+  float: left;
+  width: 100%;
+  background: #e4edf3;
+  display: block;
+}
+
+.main_block .container .left_menu > ul > ul > li a {
+  padding: 5px 14px;
+  float: left;
+  width: 100%;
+  line-height: 1.5;
+  color: #444;
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.main_block .container .left_menu > ul > ul > li ul > li {
   background: #fff;
+  float: left;
+  width: 100%;
+  border: 1px solid #dddddd;
+  margin-bottom: -1px;
+}
+
+.main_block .container .left_menu > ul > ul > li ul > li a {
+  font-size: 13px;
+  padding: 8px 4px 8px 14px;
+  font-weight: 500;
+}
+
+.main_catalog h3 {
+  text-align: center;
+  float: left;
+  width: 100%;
+  margin-top: 30px;
+}
+
+.main_catalog div div {
+  float: left;
+}
+
+.main_catalog div div .main_catalog_item {
+  float: left;
+  width: 100%;
+  -webkit-box-shadow: 0 0 0 1px #eeeeee;
+  box-shadow: 0 0 0 1px #eeeeee;
+  margin: 25px 0;
+  padding: 20px 0;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.main_catalog div div .main_catalog_item:hover {
+  -webkit-box-shadow: 0 0 12px 0px #eeeeee;
+  box-shadow: 0 0 12px 0px #eeeeee;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.main_catalog div div .main_catalog_item p {
+  text-align: center;
+  padding-top: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.main_catalog div div .main_catalog_item p a {
+  color: #0a6baf;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.main_catalog div div .main_catalog_item p span {
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.main_catalog div div .main_catalog_item img {
+  height: 150px;
+  text-align: center;
+  margin: 0 auto;
+  display: block;
+}
+
+.main_form {
+  float: left;
+  width: 100%;
+  padding: 30px 15px 0;
+  background: url(../img/worker.png) no-repeat 97% bottom;
+  background-size: contain;
+}
+
+.main_form h2 {
+  padding: 15px 0;
+  font-size: 20px;
+}
+
+.main_form form {
+  max-width: 700px;
+  margin: 10px 0;
+  float: left;
+  width: 100%;
+}
+
+.main_form form div {
+  float: left;
+  padding: 0;
+}
+
+.main_form form div span {
+  float: left;
+  width: 100%;
+}
+
+.main_form form div span input {
+  width: 90%;
+  font-size: 15px;
+  margin: 15px 0px;
+  padding: 15px;
+  border: 1px solid #aaa;
+}
+
+.main_form form div span textarea {
+  width: 100%;
+  font-size: 15px;
+  margin: 15px 0px;
+  padding: 15px;
+  height: 132px;
+}
+
+.main_form form div span textarea ::-webkit-input-placeholder {
+  color: #aaa;
+}
+
+.main_form form div span textarea ::-moz-placeholder {
+  color: #aaa;
+}
+
+.main_form form div span textarea :-ms-input-placeholder {
+  color: #aaa;
+}
+
+.main_form form div span textarea ::-ms-input-placeholder {
+  color: #aaa;
+}
+
+.main_form form div span textarea ::placeholder {
+  color: #aaa;
+}
+
+.main_form form div input.button {
+  background: #fe8839;
+  color: #ffffff;
+  font-weight: 600;
+  text-transform: uppercase;
+  border: none;
+  letter-spacing: 1px;
+}
+
+footer {
+  background: #32353a;
+  z-index: 10;
+  position: relative;
 }

@@ -35,7 +35,7 @@ body
                     a(href="tel:+74950000000") +7 (495) 000-00-00
         .main_menu
             +cont
-                ul
+                ul.col-xs-12.col-sm-12
                     li
                         a(href="#") Главная
                     li
@@ -52,74 +52,90 @@ body
                         a(href="#") Контакты
     main.main_block
         +cont
-            .col-xs-12.col-md-4.left_menu
+            .col-xs-12.col-md-3.left_menu
                 ul
-                    li
-                        a(href="#") Сыпучие материалы
+                    a(href="#") Сыпучие материалы
+                    ul
+                        li
+                            a(href="#") Щебень
                             ul
                                 li
-                                    a(href="#") Щебень
-                                        ul
-                                            li
-                                                a(href="#") Гравийный щебень 5-20 мм
-                                            li
-                                                a(href="#") Гравийный щебень 20-40 мм
-                                            li
-                                                a(href="#") Гравийный щебень 40-70 мм
-                                    a(href="#") Отсев
-                                        ul
-                                            li
-                                                a(href="#") Гранитный отсев (розовый)
-                                            li
-                                                a(href="#") Гранитный отсев (серый)
-                        a(href="#") Грунт
+                                    a(href="#") Гравийный щебень 5-20 мм
+                                li
+                                    a(href="#") Гравийный щебень 20-40 мм
+                                li
+                                    a(href="#") Гравийный щебень 40-70 мм
+                        li
+                            a(href="#") Отсев
                             ul
                                 li
-                                    a(href="#") Почвогрунт
-                                        ul
-                                            li
-                                                a(href="#") Почвогрунт Универсал
-                                            li
-                                                a(href="#") Почвогрунт Премиум
-                                    a(href="#") Чернозем
-                                        ul
-                                            li
-                                                a(href="#") Чернозем Универсал
-                                            li
-                                                a(href="#") Чернозем Премиум
-            .col-xs-12.col-md-8.content_block
+                                    a(href="#") Гранитный отсев (розовый)
+                                li
+                                    a(href="#") Гранитный отсев (серый)
+                    a(href="#") Грунт
+                    ul
+                        li
+                            a(href="#") Почвогрунт
+                            ul
+                                li
+                                    a(href="#") Почвогрунт Универсал
+                                li
+                                    a(href="#") Почвогрунт Премиум
+                        li
+                            a(href="#") Чернозем
+                            ul
+                                li
+                                    a(href="#") Чернозем Универсал
+                                li
+                                    a(href="#") Чернозем Премиум
+            .col-xs-12.col-md-9.content_block
                 .main_text
                     h2 Продажа нерудных материалов с доставкой
                     p это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. Lorem Ipsum не только успешно пережил без заметных изменений пять веков, но и перешагнул в электронный дизайн. Его популяризации в новое время послужили публикация листов Letraset с образцами Lorem Ipsum в 60-х годах и, в более недавнее время, программы электронной вёрстки типа Aldus PageMaker, в шаблонах которых используется Lorem Ipsum.
                 .main_catalog
                     .col-xs-12-col-md-6
                         h3 Сыпучие материалы
-                            .col-xs-12.col-sm-6
+                        .col-xs-12.col-sm-6
+                            .main_catalog_item
                                 img(src="img/otsev.jpg", alt="")
                                 p 
                                     a(href="#") Отсев
-                            .col-xs-12.col-sm-6
+                                    span от 1370 руб./тонна
+                        .col-xs-12.col-sm-6
+                            .main_catalog_item
                                 img(src="img/scheben.png", alt="")
                                 p 
                                     a(href="#") Щебень
+                                    span от 960 руб./тонна
                     .col-xs-12-col-md-6
                         h3 Грунт
-                            .col-xs-12.col-sm-6
+                        .col-xs-12.col-sm-6
+                            .main_catalog_item
                                 img(src="img/pochvogrunt.png", alt="")
                                 p 
                                     a(href="#") Почвогрунт
-                            .col-xs-12.col-sm-6
+                                    span от 605 руб./тонна
+                        .col-xs-12.col-sm-6
+                            .main_catalog_item
                                 img(src="img/chernozem.png", alt="")
                                 p 
                                     a(href="#") Чернозем
-                .main_form
-                    .form_content
-                        h2 Оставьте заявку и мы с Вами свяжемся в ближайшее время
-                            form 
-                                input(type="text" placeholder="Ваше имя")
-                                input(type="text" placeholder="Номер телефона")
-                                input(type="textarea" placeholder="Комментарий или вопрос...")
-                                input(type="submit" value="отправить")   
+                                    span от 605 руб./тонна
+            .col-xs-12.col-sm-12.main_form
+                .form_content
+                    h2 Оставьте заявку и мы с Вами свяжемся в ближайшее время:
+                        form 
+                            .col-xs-12.col-md-5
+                                span
+                                    input(type="text" placeholder="Ваше имя")
+                                span
+                                    input(type="text" placeholder="Номер телефона")
+                                span
+                                    input.button(type="submit" value="отправить") 
+                            .col-xs-12.col-md-7
+                                span
+                                    textarea(name="comment", cols="30", rows="5", placeholder="Комментарий или сообщение...")
+                             
 
 
 

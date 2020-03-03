@@ -6,47 +6,62 @@ $yellow: #fe8839
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,800&display=swap&subset=cyrillic');
 body
     font-family: montserrat
+    background: #f8f8f8
 header
+    background: #fff
     .header_box
         padding: 15px 0
-        .logo
-            display: flex
-            align-items: center
-            img
-            p
-                padding: 0 20px 0 35px
-                margin: 0
-                font-size: 14px
-                font-weight: 600
-        .tel
-            display: flex
-            flex-direction: column 
-            align-items: flex-end
-            a
-                font-size: 18px
-                font-weight: 700
-                color: #222222
-                padding-bottom: 6px
-        .contact1
-            display: flex
-            align-items: flex-end
-            flex-direction: column
-            p
-                font-weight: 500
-                margin: 0px 0
-                font-size: 14px
-            button
-                background: $yellow
-                border: none
-                box-shadow: none
-                color: #ffffff
-                padding: 5px 17px
-                margin-top: 15px
-
+    .logo
+        display: flex
+        align-items: center
+        img
+        p
+            padding: 0 20px 0 35px
+            margin: 0
+            font-size: 14px
+            font-weight: 600
+    .tel
+        display: flex
+        flex-direction: column 
+        align-items: flex-end
+        a
+            font-size: 18px
+            font-weight: 700
+            color: #222222
+            padding-bottom: 6px
+    .contact1
+        display: flex
+        align-items: flex-end
+        flex-direction: column
+        p
+            font-weight: 500
+            margin: 0px 0
+            font-size: 14px
+            
+        button
+            background: $yellow
+            border: none
+            box-shadow: none
+            color: #ffffff
+            padding: 8px 20px
+            margin-top: 15px
+            text-transform: uppercase
+            font-size: 12px
+            letter-spacing: 0.5px
+            font-weight: 600
                 
-
-
-
+a
+    color: $blue
+h1
+    font-size: 32px
+h2
+    font-size: 26px
+    font-weight: 600
+h3
+    font-size: 24px
+    font-weight: 600
+img 
+    max-width: 100%
 ul
     margin: 0
     padding: 0
@@ -59,7 +74,7 @@ li
     position: relative
     ul
         display: flex
-        justify-content: space-around
+        justify-content: space-between
         align-items: center
         text-transform: uppercase
         font-weight: 700
@@ -72,12 +87,118 @@ li
 .main_block
     .container
         box-shadow: 0 0px 10px 0 #eaeaea
+        background: #fff
         z-index: 2
         position: relative
-        padding-top: 25px
-        .left_menu
-            background: #eaeaea
-            ul 
-            background: $blue
-            li
-                background: #fff
+        padding-top: 20px
+        .left_menu>
+            ul>
+                background: #ffffff
+                a
+                    background: $blue
+                    @include fl
+                    color: #ffffff
+                    padding: 10px 15px
+                    font-weight: 700
+                ul>
+                    li
+                        @include fl
+                        background: #e4edf3
+                        display: block
+                        a
+                            padding: 5px 14px
+                            @include fl
+                            line-height: 1.5
+                            color: #444
+                            font-weight: 600
+                            font-size: 15px
+                        ul>
+                            li
+                                background: #fff
+                                @include fl
+                                border: 1px solid #dddddd
+                                margin-bottom: -1px
+                                a
+                                    font-size: 13px
+                                    padding: 8px 4px 8px 14px
+                                    font-weight: 500
+                              
+.main_catalog 
+    h3
+        text-align: center
+        @include fl
+        margin-top: 30px
+    div div
+        float: left
+        .main_catalog_item
+            @include fl
+            box-shadow: 0 0 0 1px #eeeeee
+            margin: 25px 0
+            padding: 20px 0
+            transition: 0.4s
+            &:hover
+                box-shadow: 0 0 12px 0px #eeeeee
+                transition: 0.4s
+
+            p
+                text-align: center
+                padding-top: 25px
+                display: flex
+                flex-direction: column
+                a
+                    color: $blue
+                    font-weight: 600
+                    text-transform: uppercase
+                span
+                    font-weight: 500
+                    font-size: 14px
+                    
+            img 
+                height: 150px
+                text-align: center
+                margin: 0 auto
+                display: block
+.main_form
+    @include fl
+    padding: 30px 15px 0
+    background: url(../img/worker.png) no-repeat 97% bottom
+    background-size: contain
+    h2
+        padding: 15px 0
+        font-size: 20px
+    form
+        max-width: 700px
+        margin: 10px 0
+        @include fl
+        div
+            float: left
+            padding: 0
+            span
+                @include fl
+                input
+                    width: 90%
+                    font-size: 15px
+                    margin: 15px 0px
+                    padding: 15px
+                    border: 1px solid #aaa
+                textarea
+                    width: 100%
+                    font-size: 15px
+                    margin: 15px 0px
+                    padding: 15px
+                    height: 132px
+                    ::placeholder
+                        color: #aaa       
+            input.button
+                background: $yellow    
+                color: #ffffff
+                font-weight: 600
+                text-transform: uppercase
+                border: none
+                letter-spacing: 1px 
+
+              
+footer
+    background: #32353a
+    z-index: 10
+    position: relative
