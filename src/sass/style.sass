@@ -1,328 +1,83 @@
-$red: #bc303e
-@mixin button
-    background: linear-gradient(to bottom, #d64150 0%, $red 100%) !important
-    box-shadow: 0 4px 0 0 #861c27, 0 9px 9px 0 rgba(0, 0, 0, 0.35) !important
-    border: none
-    height: 62px
-    max-width: 190px
+$blue: #0a6baf
+$yellow: #fe8839
+@mixin fl 
+    float: left
     width: 100%
-    border-radius: 5px
-    color: #ffffff
-    font-size: 18px
-    transition: 0.4s
-    border: none
-    padding: 0
-
-
-@import url('https://fonts.googleapis.com/css?family=Exo+2:300,400,600,700&display=swap&subset=cyrillic');
-
-body 
-    font-family: 'Exo 2'
-    margin: 0
-    padding: 0
-    color: #1d1d1d
-    line-height: 1.2
-button, a, input, textarea
-    outline: none !important
-p 
-    padding: 0
-    margin: 0
-ul 
-    margin: 0
-    padding: 0
-li
-    list-style: none
-img 
-    max-width: 100%
-h2 
-    text-align: center
-    padding-bottom: 30px
-    margin: 0
-    width: 100%
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,800&display=swap&subset=cyrillic');
+body
+    font-family: montserrat
 header
-    padding-top: 15px
-    padding-bottom: 43px
-.header__box
-    width: 100%
-    display: flex
-    align-items: center
-    justify-content: space-between
-    padding-bottom: 20px
-    &_tel img
-        width: 25px
-    &_tel a  
-            color: $red
-            padding-left: 10px
-            font-size: 20px
-    &_logo img
-        width: 100px
-.header__menu
-     border-bottom: 2px solid #ccc
-     background: #f5f5f5
-     ul
-        width: 100%
-        display: flex
-        li 
-            margin-right: 5%
-            a 
-                font-weight: 600
-                font-size: 18px
-                padding: 27px 25px
-                float: left
-                color: #000
-            a:hover 
-                text-decoration: none
-                background: $red
-                color: #fff
-.sell__banner
-    background: #f5f5f5
-    .sell__banner_box
-    float: left
-    width: 100%
-    padding: 35px
-    &_box
-        display: flex
-        align-items: center
-        width: 100%
-.sell__banner_img
-    float: left
-    width: 60%
-    padding: 0 35px
-.sell__banner_content
-    float: left
-    width: 40%
-    p 
-        color: $red
-        font-size: 40px
-        padding-bottom: 15px
-        font-weight: 600
-    ul 
-        padding-bottom: 25px
-        li 
-            padding: 5px 0
-            font-size: 18px
-            background: url(../img/check.svg) no-repeat left center
-            background-size: 10px
-            padding-left: 20px
-    button.sell 
-        @include button
-        max-width: 260px
-        &:hover
-            box-shadow: 0 4px 0 0 #861c27, 0 7px 7px 0 rgba(0, 0, 0, 0.35) !important
-            transition: 0.4s
-        &:focus
-            box-shadow: 0 2px 0 0 #861c27, 0 7px 7px 0 rgba(0, 0, 0, 0.35) !important
-            position: relative
-            top: 2px
-            height: 64px
-.seo__text1, .seo__text2, .seo__text3
-    text-align: left
-    text-indent: 15px
-    padding-bottom: 50px
-    display: block
-    float: left
-    width: 100%
-    padding-top: 50px
-    p 
-        padding-bottom: 10px
-.products .row
-    flex-direction: column
-
-
-.products__block
-    position: relative
-    padding-bottom: 25px
-    >div
-        float: left
-    .products__item
-        position: relative  
-        border: 1px solid #dddddd
-        text-align: center
-        padding: 15px
-        margin-bottom: 25px
-        border-radius: 5px
-        &_img
-            padding-bottom: 20px
-        .products__sell
-            border: 2px solid $red
-            padding: 9px 20px
-            color: #222
-            font-weight: 600
-            background: none
-            transition: 0.3s
-            &:hover
-                background: $red
-                color: #fff
-                transition: 0.3s
-.form1
-    background: #000
-    padding: 0 0 45px 0
-    float: left
-    width: 100%
-    .row
-        flex-direction: column
-    h2 
-        color: #fff
-        font-weight: 600
-        padding-top: 45px
-        margin: 0
-        padding-bottom: 25px
-    form 
-        >div
-            position: relative
-            float: left
-        span
-            margin: 20px 0px
-            float: left
-            width: 100%
-            input, textarea
-                width: 100%
-                display: block
-                padding: 20px 10px
-                border-radius: 5px
-                border: 1px solid #f9f9f9
-                background: none
-                box-shadow: none
-                padding-left: 45px
-                color: #fff
-            textarea
-                height: 125px
-                padding-left: 15px
-        .form1__bottom
-                width: 100%
-                display: flex
-                align-items: center
-    .form__button
-        @include button
-        width: 100%
-        float: left
-        max-width: 100%
-        background-image: url(../img/calc.svg) no-repeat
-
-    input.name 
-        background: url(../img/user.svg) no-repeat 12px center 
-        background-size: 20px
-    input.mail 
-        background: url(../img/mail.svg) no-repeat 12px center 
-        background-size: 20px 
-    input.tel 
-        background: url(../img/tel_form.svg) no-repeat 12px center 
-        background-size: 20px 
-.seo__text2
-    padding: 50px 0
-.reviews, .reviews__block
-    float: left
-    width: 100%
-.reviews__item
-    border: 1px solid #d9d9d9
-    padding: 30px 50px
-    line-height: 1.5
-    font-size: 17px
-    width: calc(100% - 20px) !important
-    border-radius: 5px
-    margin-left: 10px
-.reviews__item:nth-child(odd)
-    margin-right:  10px
-.reviews__item_name
-    font-size: 20px
-    font-weight: 600
-.reviews__item_stars
-    float: left
-    width: 100%
-    margin: 2px 0 25px
-    &_item
-        background: url(../img/star.svg) no-repeat
-        width: 15px
-        height: 15px
-        float: left
-        margin-right: 5px
-    .grey
-        background: url(../img/star0.svg) no-repeat
-.reviews
-    padding-bottom: 50px
-    .slick-prev, .slick-next
-        background: url(../img/arrow.svg) no-repeat center center !important
-        position: absolute
-        top: calc(100% + 45px)
-        border: 1px solid $red
-        height: 50px
-        width: 50px
-        background-size: 50% !important
-        left: calc(50% + 9px)
-    .slick-arrow:hover
-            box-shadow: 0px 0px 10px -3px inset $red
-            background: url(../img/arrow.svg) no-repeat center center !important
-            position: absolute
-            top: calc(100% + 45px)
-            border: 1px solid $red
-            height: 50px
-            width: 50px
-            background-size: 50% !important
-            left: calc(50% + 9px)
-    .slick-prev, .slick-prev:hover
-        transform: rotate(180deg)
-        top: calc(100% + 20px)
-        left: calc(50% - 60px)
-    .slick-prev:before, .slick-next:before
-        display: none
-footer 
-    background:  #f5f5f5
-    float: left
-    width: 100%
-    margin-top: 50px
-    padding: 50px 0 0 0
-    .footer__top
-        padding-bottom: 30px
-    .footer__menu1, .footer__menu2
-        ul 
-            li
-                padding-bottom: 15px 
-                a
-                    text-align: left
-                    font-weight: 600
-                    font-size: 17px 
-                    
-    .footer__info
-        float: right
-        text-align: right
-        &_tel
-            padding-bottom: 10px
-            a 
-                color: #000000
-                font-weight: 600
-                font-size: 22px
-                padding-bottom: 15px
-        &_adress
-            p 
-                padding-bottom: 5px
-        &_mail
-            padding-top: 5px
-            a 
-                color: $red
-                font-weight: 600
-                font-size: 17px
-    .footer__bottom
-        border-top: 1px solid #c4c4c4
-        padding: 25px 0
-        .row
+    .header_box
+        padding: 15px 0
+        .logo
             display: flex
-            justify-content: space-between
+            align-items: center
+            img
+            p
+                padding: 0 20px 0 35px
+                margin: 0
+                font-size: 14px
+                font-weight: 600
+        .tel
+            display: flex
+            flex-direction: column 
+            align-items: flex-end
+            a
+                font-size: 18px
+                font-weight: 700
+                color: #222222
+                padding-bottom: 6px
+        .contact1
+            display: flex
+            align-items: flex-end
+            flex-direction: column
+            p
+                font-weight: 500
+                margin: 0px 0
+                font-size: 14px
+            button
+                background: $yellow
+                border: none
+                box-shadow: none
+                color: #ffffff
+                padding: 5px 17px
+                margin-top: 15px
+
+                
 
 
-    
-    //inner
 
-.breadcrumbs
-    border-bottom: 1px solid #d9d9d9
-    padding: 13px 0
-    a 
-        color: $red
-        padding-right: 30px
-        background: url(../img/arrow2.svg) no-repeat right 3px
-        background-size: 18px 13px
-        margin-right: 13px
+ul
+    margin: 0
+    padding: 0
+li 
+    list-style: none
+
+.main_menu
+    background: $blue
+    z-index: 10
+    position: relative
+    ul
+        display: flex
+        justify-content: space-around
+        align-items: center
+        text-transform: uppercase
+        font-weight: 700
         font-size: 14px
-    span
-        font-size: 14px
-
-
+        @include fl
+        li
+            padding: 20px 0    
+            a   
+                color: #ffffff
+.main_block
+    .container
+        box-shadow: 0 0px 10px 0 #eaeaea
+        z-index: 2
+        position: relative
+        padding-top: 25px
+        .left_menu
+            background: #eaeaea
+            ul 
+            background: $blue
+            li
+                background: #fff

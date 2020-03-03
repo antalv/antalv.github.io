@@ -1,10 +1,15 @@
+mixin cont
+  .container
+    .row
+        block
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Главная</title>
+    <title>Каталог продукции сыпучих материалов</title>
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/slick.css">
@@ -14,260 +19,150 @@
 body
  
     header
-        .header__top
-            .container
-                .row
-                    .header__box
-                        .header__box_logo
-                            a(href="/")
-                                img(src="img/logo.png", alt="логотип")
-                        .header__box_tel
-                            img(src="img/tel.svg", alt="телефон")
-                            a(href="tel:88007076519") 8 (800) 707-65-19
-                        .heeder__box_adress
-                            p Санкт-Петербург
-                            p Лиговский пр., 57, м. "Пл. Восстания"
-                            p 
-                                span Бесплатная доставка по России
-        .header__menu
-            .container
-                .row
-                    ul
-                        li 
-                            a(href="#") Главная
-                        li
-                            a(href="#") О нас
-                        li
-                            a(href="#") Блог
-                        li
-                            a(href="#") Контакты
-    section.main
-        .sell__banner
-            .container
-                .row
-                    .sell__banner_box
-                        .sell__banner_img
-                            img(src="img/tech.png", alt="техника")
-                        .sell__banner_content
-                            h1 Продай ноутбук
-                            p за 10 минут
+        .header_box
+            +cont
+                .col-xs-12.col-sm-5.logo
+                    img(src="/img/logo.png", alt="")
+                    p.logo_text ОПТОВАЯ ПОСТАВКА НЕРУДНЫХ МАТЕРИАЛОВ
+                .col-xs-12.col-sm-4.contact1
+                        p Режим работы: с 08:00 до 21:00
+                        p 
+                            a(href="mailto:info@pesok.um.la") info@pesok.um.la
+                        button.recall Заказать звонок
+                .col-xs-12.col-sm-3.tel
+                    a(href="tel:+74950000000") +7 (495) 000-00-00
+                    a(href="tel:+74950000000") +7 (495) 000-00-00
+                    a(href="tel:+74950000000") +7 (495) 000-00-00
+        .main_menu
+            +cont
+                ul
+                    li
+                        a(href="#") Главная
+                    li
+                        a(href="#") Каталог
+                    li
+                        a(href="#") Прайс-лист
+                    li
+                        a(href="#") Доставка и оплата
+                    li
+                        a(href="#") О нас
+                    li
+                        a(href="#") Гарантия качества
+                    li
+                        a(href="#") Контакты
+    main.main_block
+        +cont
+            .col-xs-12.col-md-4.left_menu
+                ul
+                    li
+                        a(href="#") Сыпучие материалы
                             ul
-                                li Деньги за 10 минут
-                                li Выплата на 40% выше
-                                li Перенос данных бесплатно
-                                li Честные и понятные условия
-                            button.sell Продать
-        .seo__text1
-            .container  
-                .row
-                    p Таким образом сложившаяся структура организации способствует подготовки и реализации соответствующий условий активизации. С другой стороны сложившаяся структура организации влечет за собой процесс внедрения и модернизации систем массового участия. Равным образом постоянный количественный рост и сфера нашей активности представляет собой интересный эксперимент проверки позиций, занимаемых участниками в отношении поставленных задач.
-                    p Товарищи! новая модель организационной деятельности представляет собой интересный эксперимент проверки существенных финансовых и административных условий. Товарищи! постоянный количественный рост и сфера нашей активности требуют определения и уточнения позиций, занимаемых участниками в отношении поставленных задач.
-                    p Товарищи! дальнейшее развитие различных форм деятельности обеспечивает широкому кругу (специалистов) участие в формировании систем массового участия. С другой стороны начало повседневной работы по формированию позиции представляет собой интересный эксперимент проверки направлений прогрессивного развития. С другой стороны начало повседневной работы по формированию позиции требуют определения и уточнения соответствующий условий активизации. Таким образом постоянный количественный рост и сфера нашей активности позволяет оценить значение форм развития.
-        .products   
-            .container  
-                .row
-                    h2 Что скупаем
-                    .products__block
-                        .col-xs-12.col-md-3
-                            .products__item
-                                .products__item_img
-                                    img(src="img/tech.png", alt="техника")
-                                button.products__sell Продать ноутбук
-                        .col-xs-12.col-md-3
-                            .products__item
-                                .products__item_img
-                                    img(src="img/tech.png", alt="техника")
-                                button.products__sell Продать ноутбук
-                        .col-xs-12.col-md-3
-                            .products__item
-                                .products__item_img
-                                    img(src="img/tech.png", alt="техника")
-                                button.products__sell Продать ноутбук
-                        .col-xs-12.col-md-3
-                            .products__item
-                                .products__item_img
-                                    img(src="img/tech.png", alt="техника")
-                                button.products__sell Продать ноутбук
-                        .col-xs-12.col-md-3
-                            .products__item
-                                .products__item_img
-                                    img(src="img/tech.png", alt="техника")
-                                button.products__sell Продать ноутбук
-                        .col-xs-12.col-md-3
-                            .products__item
-                                .products__item_img
-                                    img(src="img/tech.png", alt="техника")
-                                button.products__sell Продать ноутбук
-                        .col-xs-12.col-md-3
-                            .products__item
-                                .products__item_img
-                                    img(src="img/tech.png", alt="техника")
-                                button.products__sell Продать ноутбук
-                        .col-xs-12.col-md-3
-                            .products__item
-                                .products__item_img
-                                    img(src="img/tech.png", alt="техника")
-                                button.products__sell Продать ноутбук
-                        .col-xs-12.col-md-3
-                            .products__item
-                                .products__item_img
-                                    img(src="img/tech.png", alt="техника")
-                                button.products__sell Продать ноутбук
-                        .col-xs-12.col-md-3
-                            .products__item
-                                .products__item_img
-                                    img(src="img/tech.png", alt="техника")
-                                button.products__sell Продать ноутбук
-                        .col-xs-12.col-md-3
-                            .products__item
-                                .products__item_img
-                                    img(src="img/tech.png", alt="техника")
-                                button.products__sell Продать ноутбук
-                        .col-xs-12.col-md-3
-                            .products__item
-                                .products__item_img
-                                    img(src="img/tech.png", alt="техника")
-                                button.products__sell Продать ноутбук
-        .form1
-            .container
-                .row
-                    h2 Быстрая оценка любого устройства
-                    form
-                        .col-xs-12.col-md-4
-                            span
-                                input.name(type="text", placeholder="Имя")
-                        .col-xs-12.col-md-4
-                            span
-                                input.tel(type="text", placeholder="Номер телефона")
-                        .col-xs-12.col-md-4
-                            span
-                                input.mail(type="text", placeholder="E-mail")
-                        .form1__bottom
-                            .col-xs-12.col-md-8
-                                span
-                                    textarea.message(name="message", cols="30", rows="10", placeholder="Сообщение")
-                            .col-xs-12.col-md-4
-                                span
-                                    input.form__button(type="submit", value="Быстрая оценка")
-        .seo__text2
-            .container  
-                .row
-                    p Таким образом сложившаяся структура организации способствует подготовки и реализации соответствующий условий активизации. С другой стороны сложившаяся структура организации влечет за собой процесс внедрения и модернизации систем массового участия. Равным образом постоянный количественный рост и сфера нашей активности представляет собой интересный эксперимент проверки позиций, занимаемых участниками в отношении поставленных задач.
-                    p Товарищи! новая модель организационной деятельности представляет собой интересный эксперимент проверки существенных финансовых и административных условий. Товарищи! постоянный количественный рост и сфера нашей активности требуют определения и уточнения позиций, занимаемых участниками в отношении поставленных задач.
-                    p Товарищи! дальнейшее развитие различных форм деятельности обеспечивает широкому кругу (специалистов) участие в формировании систем массового участия. С другой стороны начало повседневной работы по формированию позиции представляет собой интересный эксперимент проверки направлений прогрессивного развития. С другой стороны начало повседневной работы по формированию позиции требуют определения и уточнения соответствующий условий активизации. Таким образом постоянный количественный рост и сфера нашей активности позволяет оценить значение форм развития.
-        .reviews
-            .container
-                .row
-                    h2 Отзывы
-                    .reviews__block
-                        .reviews__item  
-                            .reviews__item_name Иван Иванов
-                            .reviews__item_stars
-                                .reviews__item_stars_item
-                                .reviews__item_stars_item
-                                .reviews__item_stars_item
-                                .reviews__item_stars_item
-                                .reviews__item_stars_item
-                            .reviews__item_text Менеджеры отработали очень хорошо.Нужен был маленький ноутбук для учебы.Предложили несколько вариантов.Сразу показали недостатки на всех ноутах ,от пятен на экране до батареи.Есть небольшая гарантия, в течении недели можно вернуть обратно. Есть один минус. Не дозвониться по указанному телефону на сайте. В принципе. Ехали наугад. Да и уже дома обнаружили ,что нам отдали только половину зарядки. Нет сетевого кабеля.Скорее это недоразумение.Но дозвониться опять не смогли. Магазин рекомендую.
-                        
-                        .reviews__item  
-                            .reviews__item_name Иван Иванов
-                            .reviews__item_stars
-                                .reviews__item_stars_item
-                                .reviews__item_stars_item
-                                .reviews__item_stars_item
-                                .reviews__item_stars_item
-                                .reviews__item_stars_item.grey
-                            .reviews__item_text Менеджеры отработали очень хорошо.Нужен был маленький ноутбук для учебы.Предложили несколько вариантов.Сразу показали недостатки на всех ноутах ,от пятен на экране до батареи.Есть небольшая гарантия, в течении недели можно вернуть обратно. Есть один минус. Не дозвониться по указанному телефону на сайте. В принципе. Ехали наугад. Да и уже дома обнаружили ,что нам отдали только половину зарядки. Нет сетевого кабеля.Скорее это недоразумение.Но дозвониться опять не смогли. Магазин рекомендую.
-                        .reviews__item  
-                            .reviews__item_name Иван Иванов
-                            .reviews__item_stars
-                                .reviews__item_stars_item
-                                .reviews__item_stars_item
-                                .reviews__item_stars_item
-                                .reviews__item_stars_item
-                                .reviews__item_stars_item
-                            .reviews__item_text Менеджеры отработали очень хорошо.Нужен был маленький ноутбук для учебы.Предложили несколько вариантов.Сразу показали недостатки на всех ноутах ,от пятен на экране до батареи.Есть небольшая гарантия, в течении недели можно вернуть обратно. Есть один минус. Не дозвониться по указанному телефону на сайте. В принципе. Ехали наугад. Да и уже дома обнаружили ,что нам отдали только половину зарядки. Нет сетевого кабеля.Скорее это недоразумение.Но дозвониться опять не смогли. Магазин рекомендую.
-                        
-                        .reviews__item  
-                            .reviews__item_name Иван Иванов
-                            .reviews__item_stars
-                                .reviews__item_stars_item
-                                .reviews__item_stars_item
-                                .reviews__item_stars_item
-                                .reviews__item_stars_item
-                                .reviews__item_stars_item
-                            .reviews__item_text Менеджеры отработали очень хорошо.Нужен был маленький ноутбук для учебы.Предложили несколько вариантов.Сразу показали недостатки на всех ноутах ,от пятен на экране до батареи.Есть небольшая гарантия, в течении недели можно вернуть обратно. Есть один минус. Не дозвониться по указанному телефону на сайте. В принципе. Ехали наугад. Да и уже дома обнаружили ,что нам отдали только половину зарядки. Нет сетевого кабеля.Скорее это недоразумение.Но дозвониться опять не смогли. Магазин рекомендую.
-                        .reviews__item  
-                                .reviews__item_name Иван Иванов
-                                .reviews__item_stars
-                                    .reviews__item_stars_item
-                                    .reviews__item_stars_item
-                                    .reviews__item_stars_item
-                                    .reviews__item_stars_item
-                                    .reviews__item_stars_item
-                                .reviews__item_text Менеджеры отработали очень хорошо.Нужен был маленький ноутбук для учебы.Предложили несколько вариантов.Сразу показали недостатки на всех ноутах ,от пятен на экране до батареи.Есть небольшая гарантия, в течении недели можно вернуть обратно. Есть один минус. Не дозвониться по указанному телефону на сайте. В принципе. Ехали наугад. Да и уже дома обнаружили ,что нам отдали только половину зарядки. Нет сетевого кабеля.Скорее это недоразумение.Но дозвониться опять не смогли. Магазин рекомендую.
-                            
-                        .reviews__item  
-                            .reviews__item_name Иван Иванов
-                            .reviews__item_stars
-                                .reviews__item_stars_item
-                                .reviews__item_stars_item
-                                .reviews__item_stars_item
-                                .reviews__item_stars_item
-                                .reviews__item_stars_item
-                            .reviews__item_text Менеджеры отработали очень хорошо.Нужен был маленький ноутбук для учебы.Предложили несколько вариантов.Сразу показали недостатки на всех ноутах ,от пятен на экране до батареи.Есть небольшая гарантия, в течении недели можно вернуть обратно. Есть один минус. Не дозвониться по указанному телефону на сайте. В принципе. Ехали наугад. Да и уже дома обнаружили ,что нам отдали только половину зарядки. Нет сетевого кабеля.Скорее это недоразумение.Но дозвониться опять не смогли. Магазин рекомендую.
+                                li
+                                    a(href="#") Щебень
+                                        ul
+                                            li
+                                                a(href="#") Гравийный щебень 5-20 мм
+                                            li
+                                                a(href="#") Гравийный щебень 20-40 мм
+                                            li
+                                                a(href="#") Гравийный щебень 40-70 мм
+                                    a(href="#") Отсев
+                                        ul
+                                            li
+                                                a(href="#") Гранитный отсев (розовый)
+                                            li
+                                                a(href="#") Гранитный отсев (серый)
+                        a(href="#") Грунт
+                            ul
+                                li
+                                    a(href="#") Почвогрунт
+                                        ul
+                                            li
+                                                a(href="#") Почвогрунт Универсал
+                                            li
+                                                a(href="#") Почвогрунт Премиум
+                                    a(href="#") Чернозем
+                                        ul
+                                            li
+                                                a(href="#") Чернозем Универсал
+                                            li
+                                                a(href="#") Чернозем Премиум
+            .col-xs-12.col-md-8.content_block
+                .main_text
+                    h2 Продажа нерудных материалов с доставкой
+                    p это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. Lorem Ipsum не только успешно пережил без заметных изменений пять веков, но и перешагнул в электронный дизайн. Его популяризации в новое время послужили публикация листов Letraset с образцами Lorem Ipsum в 60-х годах и, в более недавнее время, программы электронной вёрстки типа Aldus PageMaker, в шаблонах которых используется Lorem Ipsum.
+                .main_catalog
+                    .col-xs-12-col-md-6
+                        h3 Сыпучие материалы
+                            .col-xs-12.col-sm-6
+                                img(src="/img/otsev.jpg", alt="")
+                                p 
+                                    a(href="#") Отсев
+                            .col-xs-12.col-sm-6
+                                img(src="/img/scheben.png", alt="")
+                                p 
+                                    a(href="#") Щебень
+                    .col-xs-12-col-md-6
+                        h3 Грунт
+                            .col-xs-12.col-sm-6
+                                img(src="/img/pochvogrunt.png", alt="")
+                                p 
+                                    a(href="#") Почвогрунт
+                            .col-xs-12.col-sm-6
+                                img(src="/img/chernozem.png", alt="")
+                                p 
+                                    a(href="#") Чернозем
+                .main_form
+                    .form_content
+                        h2 Оставьте заявку и мы с Вами свяжемся в ближайшее время
+                            form 
+                                input(type="text" placeholder="Ваше имя")
+                                input(type="text" placeholder="Номер телефона")
+                                input(type="textarea" placeholder="Комментарий или вопрос...")
+                                input(type="submit" value="отправить")   
+
+
+
+
+
+
+
+
     footer
-        .footer__top
-            .container  
-                .row
-                    .col-xs-12.col.md-3.footer__logo
-                        img(src="img/logo.png", alt="логотип")
-                    .col-xs-12.col.md-3.footer__menu1
-                        ul
-                            li
-                                a Продать ноутбук
-                            li
-                                a Продать ноутбук
-                            li
-                                a Продать ноутбук
-                            li
-                                a Продать ноутбук
-                            li
-                                a Продать ноутбук
-                            li
-                                a Продать ноутбук
-                            li
-                                a Продать ноутбук
-                    .col-xs-12.col.md-3.footer__menu2
-                        ul
-                            li
-                                a Блог
-                            li
-                                a О нас
-                            li
-                                a Контакты
-                    .col-xs-12.col-md-3.footer__info
-                        .footer__info_tel
-                            a(href="tel:88127010653") 8 (812) 701-06-53
-                        .footer__info_adress 
-                            p Санкт-Петербург
-                            p Лиговский пр. 57
-                            p м."Пл. Восстания"
-                        .footer__info_mail
-                            a(href="mailto:mail@mail.ru") mail@mail.ru
-        .footer__bottom
-            .container  
-                .row
-                    .footer__bottom_left Этот сайт не является публичной офертой и создан исключительно в ознакомительных целях
+        +cont
+            .col-xs-12.col-md-4.footer1
+                img(src="/img/logo.png", alt="")
+                p ОПТОВАЯ ПОСТАВКА НЕРУДНЫХ МАТЕРИАЛОВ
+                a(href="tel:") +7 (495) 000-00-00
+                a(href="mailto:") info@pesok.um.la
+                p pesok.um.la © 2020 Все права защищены
+            .col-xs-12.col-md-4
+                ul
+                    li
+                        a(href="#") Главная
+                    li
+                        a(href="#") Каталог
+                    li
+                        a(href="#") Прайс-лист
+                    li
+                        a(href="#") Доставка и оплата
+            .col-xs-12.col-md-4
+                ul
+                    li
+                        a(href="#") О нас
+                    li
+                        a(href="#") Гарантия качества
+                    li
+                        a(href="#") Контакты
 
 
-                    .footer__bottom_right Refresh market-service 2020
+
             
                 
     // ------------------- scripts -----------------------
-    script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js")
-    script(src="js/bootstrap.min.js")
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     script(src="js/slick.js")
     script(src="js/scripts.js")
 
